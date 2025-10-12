@@ -28,8 +28,8 @@ Powers of the myriad are typically named by degree ("Myriad Squared" Myriad Cube
 | 2  | Deuterad     | 13 | Decatotritorad  | 40     | Tetracontarad            |
 | 3  | Tritorad     | 14 | Decatotetarad   | 50     | Pentacontarad            |
 | 4  | Tetarad      | 15 | Decatopemptorad | 60     | Hexacontarad             |
-| 5  | Pemptorad    | 16 | Decatohectorad  | 70     | Heptacontarad            |
-| 6  | Hectorad     | 17 | Decatohebdorad  | 80     | Octacontarad             |
+| 5  | Pemptorad    | 16 | Decatohectrad   | 70     | Heptacontarad            |
+| 6  | Hectrad      | 17 | Decatohebdorad  | 80     | Octacontarad             |
 | 7  | Hebdorad     | 18 | Decatogdorad    | 90     | Enneacontarad            |
 | 8  | Ogdorad      | 19 | Decatoenatorad  | 100    | Hecatorad                |
 | 9  | Enatorad     | 20 | Icosarad        | 500    | Pemptohecatorad          |
@@ -84,7 +84,7 @@ You ask yourself "Where do all the number names come from anyway, and when do we
 | 12      | One Tritorad                       | One Trillion                                        |
 | 16      | One Tetarad                        | Ten Quadrillion                                     |
 | 20      | One Pemptorad                      | One Hundred Quintillion                             |   
-| 24      | One Hectorad                       | One Septillion                                      |
+| 24      | One Hectrad                        | One Septillion                                      |
 | 28      | One Hebdorad                       | Ten Octillion                                       |
 | 32      | One Ogdorad                        | One Hundred Nonillion                               |
 | 36      | One Enatorad                       | One Undecillion                                     |
@@ -94,7 +94,7 @@ You ask yourself "Where do all the number names come from anyway, and when do we
 | 52      | One Decatotritorad                 | Ten Sexdecillion                                    |
 | 56      | One Decatotetarad                  | One Hundred Septendecillion                         |
 | 60      | One Decatopemptorad                | One Novendecillion                                  |
-| 64      | One Decatohectorad                 | Ten Vigintillion                                    |
+| 64      | One Decatohectrad                  | Ten Vigintillion                                    |
 | 68      | One Decatohebdorad                 | One Hundred Unvigintillion                          |
 | 72      | One Decatogdorad                   | One Tresvigintillion                                |
 | 76      | One Decatoenatarad                 | Ten Quattuorvigintillion                            |
@@ -120,7 +120,7 @@ You ask yourself "Where do all the number names come from anyway, and when do we
 | 16;0000 | One Great Tetarad                  | Ten Tresquinquagintilliduotrigintatrecentillion     |
 
 ## (Additional) Trivia
-* Numeric prefixes (of polygons), and Greek ordinals are interchangeable. (That is, "deuterad" can also be called "diarad".)  
+* Numeric prefixes (of polygons), and Greek ordinals are interchangeable. (That is, "hectrad" can also be called "hexarad", and "hecatorad" can also be called "hectorad".)  
 * In the Great Myriad Scale, digits are in groups of four, separated by semi-colons. Commas are also ok to use.
 * Archimedes' largest Sand Number (the largest described in The Sand Reckoner) is equal to 10^(8 * 10^16), or a "Tetaron Deuterad".
 * A "Deuteron Myriad" is equal to 10^(4 * 10^(4 * 2)), a "Triton Myriad" is equal to 10^(4 * 10^(4 * 3)), and so on...
@@ -138,5 +138,3 @@ You ask yourself "Where do all the number names come from anyway, and when do we
 * [Archimedes' Sand Number](https://en.wikipedia.org/wiki/The_Sand_Reckoner)
 * [Knuth's -yllion System](https://en.wikipedia.org/wiki/-yllion)
 * [Github Repository for this Page](https://github.com/AndrewJVella/GreatMyriadScale/tree/main)
-
-
