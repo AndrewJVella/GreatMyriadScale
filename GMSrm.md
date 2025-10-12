@@ -33,11 +33,11 @@ Powers of the myriad are typically named by degree ("Myriad Squared" Myriad Cube
 | 7  | Hebdorad     | 18 | Decatogdorad    | 90     | Enneacontarad            |
 | 8  | Ogdorad      | 19 | Decatoenatorad  | 100    | Hecatorad                |
 | 9  | Enatorad     | 20 | Icosarad        | 500    | Pemptohecatorad          |
-| 10 | Decatorad    | 21 | Icosaprotarad   | 1000   | Decatohecatorad          |
+| 10 | Decatorad    | 21 | Icosaprotorad   | 1000   | Decatohecatorad          |
 | 11 | Hendecatorad | 22 | Icosadeuterad   | 1;0000 | Great Myriad             |
 
 
-Each power  of the myriad is named in this pattern until the Great Myriad, which gives this scale its name. The Great Myriad is equal to the myriad raised to the power of a myriad, which is ten to the power of forty thousand. The powers of the Great Myriad are also named with "Great", such that the square of the Great Myriad is the "Great Deuterad", the cube of the Great Myriad is the "Great Tritarad", and so on…
+Each power  of the myriad is named in this pattern until the Great Myriad, which gives this scale its name. The Great Myriad is equal to the myriad raised to the power of a myriad, which is ten to the power of forty thousand. The powers of the Great Myriad are also named with "Great", such that the square of the Great Myriad is the "Great Deuterad", the cube of the Great Myriad is the "Great Tritorad", and so on…
 
 Of course, by raising the Great Myriad to the power of a myriad, (or 10 to the power of 4 deuterad) we get a "Great, Great Myriad". Raise this to the power of a myriad again to get  a "Great, Great, Great Myriad" and so on. To keep names short, a nucleic naming scheme is used (swapping the "-rad" suffix used in the above table for "-on"). The "Great, Great Myriad" is called the "Deuteron Myriad". The "Great, Great, Great Myriad" is called the "Triton Myriad" and so on...
 
@@ -99,7 +99,7 @@ You ask yourself "Where do all the number names come from anyway, and when do we
 | 72      | One Decatogdorad                   | One Tresvigintillion                                |
 | 76      | One Decatoenatarad                 | Ten Quattuorvigintillion                            |
 | 80      | One Icosarad                       | One Hundred Quinvigintillion                        |
-| 84      | One Icosaprotarad                  | One Septenvigintillion                              |
+| 84      | One Icosaprotorad                  | One Septenvigintillion                              |
 | 88      | One Icosadeuterad                  | Ten Octovigintillion                                |
 | 92      | One Icosatritorad                  | One Hundred Novenvigintillion                       |
 | 96      | One Icosatetarad                   | One Untrigintillion                                 |
@@ -138,3 +138,5 @@ You ask yourself "Where do all the number names come from anyway, and when do we
 * [Archimedes' Sand Number](https://en.wikipedia.org/wiki/The_Sand_Reckoner)
 * [Knuth's -yllion System](https://en.wikipedia.org/wiki/-yllion)
 * [Github Repository for this Page](https://github.com/AndrewJVella/GreatMyriadScale/tree/main)
+
+
