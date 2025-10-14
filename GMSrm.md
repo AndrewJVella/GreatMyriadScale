@@ -41,7 +41,7 @@ Each power  of the myriad is named in this pattern until the Great Myriad, which
 
 Of course, by raising the Great Myriad to the power of a myriad, (or 10 to the power of 4 deuterad) we get a "Great, Great Myriad". Raise this to the power of a myriad again to get  a "Great, Great, Great Myriad" and so on. To keep names short, a nucleic naming scheme is used (swapping the "-rad" suffix used in the above table for "-on"). The "Great, Great Myriad" is called the "Deuteron Myriad". The "Great, Great, Great Myriad" is called the "Triton Myriad" and so on...
 
-##The Great Myriads
+## The Great Myriads
 
 | n  | Name       | n  | Name           | n      | Name                   |    
 |:--:|:----------:|:--:|:--------------:|:------:|:----------------------:|
@@ -138,5 +138,6 @@ You ask yourself "Where do all the number names come from anyway, and when do we
 * [Archimedes' Sand Number](https://en.wikipedia.org/wiki/The_Sand_Reckoner)
 * [Knuth's -yllion System](https://en.wikipedia.org/wiki/-yllion)
 * [Github Repository for this Page](https://github.com/AndrewJVella/GreatMyriadScale/tree/main)
+
 
 
