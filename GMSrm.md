@@ -2,7 +2,7 @@
 
 Large numbers are commonly named with Latin prefixes, but these Latin names can be difficult to parse.  First, similar names are easily confused (such as "million" and "billion"). Second, with multiple scales in use, values can be ambiguous (one billion is equal to 10^9 or 10^12 depending on use of the short or long scale.) Finally, these parsing difficulties are exacerbated as values increase. (How much is a decillion in the short scale? The Latin for ten is used for one thousand to the eleventh. Madness.) I propose a scale derived from Greek names, such as the myriad, which I call the Great Myriad Scale. (Pedantically, this scale actually uses English with Greco-Latin roots, and a bit of wordplay. Spare me, I do not suggest my number names are actual Greek.) The Great Myriad Scale is intended to be an unambiguous scale for counting large numbers. It is based on the myriad, classically equal to ten thousand. Numbers in this scale are derived from Greco-English numerals, such as those used to name polygons. Essentially, this scale is intended to be a practical naming convention for impractically large numbers.
 
-## Numbers below the Myriad:
+## Numbers below the Myriad
 
 | n  | Name   | n  | Name       | n      | Name                       |      
 |----|--------|----|------------|--------|----------------------------|
@@ -138,4 +138,5 @@ You ask yourself "Where do all the number names come from anyway, and when do we
 * [Archimedes' Sand Number](https://en.wikipedia.org/wiki/The_Sand_Reckoner)
 * [Knuth's -yllion System](https://en.wikipedia.org/wiki/-yllion)
 * [Github Repository for this Page](https://github.com/AndrewJVella/GreatMyriadScale/tree/main)
+
 
