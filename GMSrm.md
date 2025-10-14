@@ -25,10 +25,10 @@ Powers of the myriad are typically named by degree ("Myriad Squared" Myriad Cube
 | n  | Name         | n  | Name            | n      | Name                     |    
 |----|--------------|----|-----------------|--------|--------------------------|
 | 1  | Myriad       | 12 | Dodecatorad     | 30     | Tricontarad              |
-| 2  | Deuterad     | 13 | Decatotritorad  | 40     | Tetracontarad            |
-| 3  | Tritorad     | 14 | Decatotetarad   | 50     | Pentacontarad            |
-| 4  | Tetarad      | 15 | Decatopemptorad | 60     | Hexacontarad             |
-| 5  | Pemptorad    | 16 | Decatohectrad   | 70     | Heptacontarad            |
+| 2  | Deuteriad     | 13 | Decatotritorad  | 40     | Tetracontarad            |
+| 3  | Tritoriad     | 14 | Decatotetarad   | 50     | Pentacontarad            |
+| 4  | Tetariad      | 15 | Decatopemptorad | 60     | Hexacontarad             |
+| 5  | Pemptoriad    | 16 | Decatohectrad   | 70     | Heptacontarad            |
 | 6  | Hectrad      | 17 | Decatohebdorad  | 80     | Octacontarad             |
 | 7  | Hebdorad     | 18 | Decatogdorad    | 90     | Enneacontarad            |
 | 8  | Ogdorad      | 19 | Decatoenatorad  | 100    | Hecatorad                |
@@ -138,3 +138,4 @@ You ask yourself "Where do all the number names come from anyway, and when do we
 * [Archimedes' Sand Number](https://en.wikipedia.org/wiki/The_Sand_Reckoner)
 * [Knuth's -yllion System](https://en.wikipedia.org/wiki/-yllion)
 * [Github Repository for this Page](https://github.com/AndrewJVella/GreatMyriadScale/tree/main)
+
