@@ -42,7 +42,7 @@ In this scale each power of the myriad get an ancient Greek prefix and an "-iad"
 
 Each power  of the myriad is named in this pattern until the Great Myriad, which gives this scale its name. The Great Myriad is equal to the myriad raised to the power of a myriad, which is ten to the power of forty thousand. The powers of the Great Myriad are also named with "Great", such that the square of the Great Myriad is the "Great Deuteriad", the cube of the Great Myriad is the "Great Tritiad", and so on. Is that it? No, of course there is more to discuss. Infinity is very big.
 
-##The Great Myriads
+## The Great Myriads
 
 Of course, by raising the Great Myriad to the power of a myriad, we get a "Great, Great Myriad". Raise this to the power of a myriad again to get  a "Great, Great, Great Myriad" and so on. To keep names short, a nucleic naming scheme is used (swapping the  suffix used in the above table for "-on"). The "Great, Great Myriad" is called the "Deuteron Myriad". The "Great, Great, Great Myriad" is called the "Triton Myriad", and so on according to the following table, with each item Each item in row n equal to 1,0000^(1,0000^n)
 
@@ -60,7 +60,13 @@ Of course, by raising the Great Myriad to the power of a myriad, we get a "Great
 | 10 | Decaton    | 21 | Icosoproton    | 1000   | Decatohecaton          |
 | 11 | Hendecaton | 22 | Icosodeuteron  | 1,0000 | Myrion                 |
 
-This scheme continues to infinity, with "Myrion Myriad" being followed by "Myriaproton Myriad", which is then followed by "Myriadeuteron Myriad", and so on.  
+This scheme continues to infinity, with "Myrion Myriad" being followed by "Myriaproton Myriad", which is then followed by "Myriadeuteron Myriad", and so on.
+
+## Constructing Cardinals, Ordinals, and Fractions
+
+Counting the cardinal numbers between large myriads is done as it would be for any conventional denomination: largest in the middle, multipliers on the left, sums on the right. For example, one hundred times two, plus two is "two hundred, two" or "two hundred and two". Therefore, A great myriad times a myriad is a "myriad great myriad". Add one hundred to this and you get "one myriad great myriad, one hundred".
+
+Ordinals are used for listing items; such as first, second, and third. The ordinals below the myriad are conventional: cardinal "ten" is paired with ordinal "tenth", hundred is paired with hundredth, thousand is paired with thousandth. Thus, cardinal "myriad" is paired with "myriadth", "deuteriad" with "deuteriadth", and "great myriad" with "great myriadth". Each cardinal has an ordinal, and these ordinals can be used to denote fractions (in the same manner that ordinals are conventionally used). One over a great myriad is "one great myriadth". Double that for "two great myraidths", and so on.   
 
 ## Why?
 
