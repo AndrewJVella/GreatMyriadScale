@@ -123,10 +123,11 @@ You ask yourself "Where do all the number names come from anyway, and when do we
 | 8,0000  | One Great Dueteriad                   | One Hundred Sesvigintilliquinsexagintasescentillion |
 
 ## (Additional) Trivia
-* Archimedes' largest Sand Number (the largest described in The Sand Reckoner) is equal to 10^(8 * 10^16), or a "Tetaron Deuterad".
+* If you prefer, you can make use of a "Great Chilliad Scale", named for a chilliad, or a group of one thousand. The "-iad" suffix would be swapped for "-illiad", such that one million is equal to "one deuterilliad", one billion is equal to "one tritilliad", and so on...  
 * A "Deuteron Myriad" is equal to 10^(4 * 10^(4 * 2)), a "Triton Myriad" is equal to 10^(4 * 10^(4 * 3)), and so on...
 * A "Myrion Myriad" is equal to 10^(4 * 10^(4 * 10^4))
-* An apeirogon has an infinite number of sides; "apeiro" gives the Great Myriad Scale the "Apeirad" and the "Apeiron Myriad"
+* An apeirogon has an infinite number of sides; "apeiro" gives the Great Myriad Scale the "Apeiriad" and the "Apeiron Myriad"
+* Archimedes' largest Sand Number (the largest described in The Sand Reckoner) is equal to 10^(8 * 10^16), or a "Tetaron Deuteriad".
 * "Cola's Enumeration" and the "Ordinal Myriad Scale" are previous attempts to enumerate large numbers, using the Conway Wechsler system, Greek ordinals, and hyperoperations. Ultimately, it is important that each name for a large number is based on the names of smaller numbers, rather than operations or notations. The numbers between "novel numbers", or "milestone numbers", also need to be nameable.
 
 ## Sources
