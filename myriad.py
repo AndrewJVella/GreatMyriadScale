@@ -1,52 +1,75 @@
 #This code was written without genAI because I am a big boy. I know, this is still python, not C or assembly, but while I am a big boy, I do not want to go crazy either. C would give me more control over memory, but python is certainly good enough here.
 
+#This program is a fork of Conway's Illion Converter by kyoda
+#The Great Myriad Scale is created by Andrew
+
+import time
 
 UNIT = ['', 'prot', 'deuter', 'trit', 'tetar',
            'pempt', 'hect', 'hebdom', 'ogd', 'enat']
 TEN = ['', 'decat', 'icos', 'tricont', 'tetracont', 'pentacont',
        'hexacont', 'heptacont', 'octacont', 'enneacont']
-BIGS = ['hecat', 'great']
+BIGS = ['hecaton', 'great']
 
 
 def main():
-    giveInput()
 
-def giveInput():
+    print("This program is a proof of concept for the Great Myriad Scale.\nThis scale names large numbers with myriads, rather than millions.\nYou can find more details on that in the readme.\nThis program is a fork of \"Conway's illion Converter\" by kyoda")
+
+    PickNumberLoop()
+
+
+def displayloop():
+    while True:
+        list(10000, 1, 1, 150)
+        print("\n" * 150)
+        sleep(3)
+
+
+def PickNumberLoop():
     i = "Lorem Ipsum"
     while (not i == ""):
-        i = input("give number\n> ")
-        print(myriad(i))
+        i = input("\nGive a power of a myriad (10000^n), and get its name in this scale.\n> ")
+        printMyriad(i)
 
-def list(end = 10000, skip = 1, start = 1):
+def list(end = 1000, skip = 1, start = 1, millis = 0):
 
     i = start
     while i < end + skip:
-        print(str(i) +"\t"+ myriad(i))
+        printMyriad(i)
         i += skip
+        time.sleep(millis / 1000)
+
+def printMyriad(i):
+    m =  myriad(i)
+    if (i == 0):
+        m = "one"
+
+    print("10000^" + str(i) + " is called \"" + str(m) + "\"")
 
 def myriad(n):
-
+    suffix = "iad"
     #input sanitization
     try:
         n = int(n)
-        if n < 1:
+        if n < 0:
             n = n * -1
+            suffix = "iadth"
     except ValueError:
-        print('"' + str(n) + '" makes an error :(')
+        #print(' an error :(')
         return ""
 
     #edge cases
-
     if n == 0:
-        return 'one'
+        return '' #one
     if n == 1:
             return 'myriad'
     if n == 11:
-        return 'hen' + TEN[1] + 'iad'
+        return 'hen' + TEN[1] + suffix
     if n == 12:
-            return 'do' + TEN[1] + 'iad'
+            return 'do' + TEN[1] + suffix
     #end of edge cases
-    return str(base(n)) + "iad"
+    return str(base(n)) + suffix
 def base(n):
     if n < 10:
         return UNIT[n]
@@ -67,22 +90,26 @@ def base(n):
         t = n // 100
         m = n % 100
         if t == 1:
-            return BIGS[0]  + base(m)
+            return BIGS[0] + base(m)
         return base(t) + "o" + BIGS[0]  + base(m)
-    if n < 10000: #here there be dragons?
+    if n < 10000: #here there be dragons? I forget. Norovirus is fun.
         t = n // 100
         return base(n // 100) + "o" + BIGS[0]  + base(n % 100)
-    if n > 9999:
-        g = 0
-        while n > 9999:
-            n = n - 10000
-            g += 1
-        if g == 1 and n == 0:
+    #if n < 100000000: # great myriad to great great myriad or deuteron myriad
+    else:
+        g = n // 10000
+        m = n % 10000
+        if g == 1 and m == 0:
             return BIGS[1] + " myr"
-        if g == 1 and n > 0:
-            return myriad(n) + " " + BIGS[1] + " myr"
-        else:
-            return myriad(n % 10000) + " " + BIGS[1] + " " + base(g)
+        if g == 1 and m > 0:
+            return myriad(m) + " " + BIGS[1] + " myr"
+        if g > 1 and m == 0:
+            #if you actually try to track the stack calls by printing base(g) before return there's a lot more than I expected...
+            return BIGS[1] + " " + base(g)
+        if g > 1 and m > 0:
+            return myriad(m % 10000) + " great " + base(g)
+    #    return "bigboy"
+        #deuteron myriad and beyond
 
 if __name__ == "__main__":
     main()
