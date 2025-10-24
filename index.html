@@ -22,6 +22,7 @@
 
 <h1>Great Myriad Scale</h1>
 <p>Large numbers are commonly named with Latin prefixes, but these Latin names can be difficult to parse.  First, similar names are easily confused (such as "million" and "billion"). Second, with multiple scales in use, values can be ambiguous (one billion is equal to 10^9 or 10^12 depending on use of the short or long scale.) Finally, these parsing difficulties are exacerbated as values increase. (How much is a decillion in the short scale? The Latin for ten is used for one thousand to the eleventh. Madness.) I propose a scale derived from ancient Greek which I call the Great Myriad Scale. (Ok so, this scale actually uses English, with Greco-Latin roots and a bit of wordplay. Spare me your wrath.) The Great Myriad Scale is intended to be an unambiguous scale for counting large numbers. It is based on the myriad, classically equal to ten thousand. Essentially, this scale is intended to be a practical naming convention for impractically large numbers.</p>
+<p>If you would like to try an implmentation of this scale, there is a python3 program on the github repository for this page, linked in sources.</p>
 <p>Let's start with a table to count from one to one myriad:</p>
 <table>
 <thead>
@@ -308,7 +309,7 @@
 <td style="text-align: center;">19</td>
 <td style="text-align: center;">Decatoenaton</td>
 <td style="text-align: center;">100</td>
-<td style="text-align: center;">Hecaton</td>
+<td style="text-align: center;">Hecatonon</td>
 </tr>
 <tr>
 <td style="text-align: center;">9</td>
@@ -316,7 +317,7 @@
 <td style="text-align: center;">20</td>
 <td style="text-align: center;">Icoson</td>
 <td style="text-align: center;">500</td>
-<td style="text-align: center;">Pemptohecaton</td>
+<td style="text-align: center;">Pemptohecatonon</td>
 </tr>
 <tr>
 <td style="text-align: center;">10</td>
@@ -324,7 +325,7 @@
 <td style="text-align: center;">21</td>
 <td style="text-align: center;">Icosoproton</td>
 <td style="text-align: center;">1000</td>
-<td style="text-align: center;">Decatohecaton</td>
+<td style="text-align: center;">Decatohecatonon</td>
 </tr>
 <tr>
 <td style="text-align: center;">11</td>
@@ -337,6 +338,7 @@
 </tbody>
 </table>
 <p>This scheme continues to infinity, with "Myrion Myriad" being followed by "Myriaproton Myriad", which is then followed by "Myriadeuteron Myriad", and so on.</p>
+<p>This table grows so fast, that it becomes difficult to describe numbers this large, even in powers of a myriad. For example, a myriad to the power of a tritiad (1,0000^1,0000,0000,0000) is a triton myriad, but a myriad to the power of a tritiad-eleven-hundred-eleven-deuteriad-eleven-hundred-eleven-myriad-eleven-hundred-eleven (1,0000^1,1111,1111,1111) is a "decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great myriad". This all gets very repetitive, so its best to truncate insignificant figures.</p>
 <h2>Constructing Cardinals, Ordinals, and Fractions</h2>
 <p>Counting the cardinal numbers between large myriads is done as it would be for any conventional denomination: largest in the middle, multipliers on the left, sums on the right. For example, one hundred times two, plus two is "two hundred, two" or "two hundred and two". Therefore, A great myriad times a myriad is a "myriad great myriad". Add one hundred to this and you get "one myriad great myriad, one hundred".</p>
 <p>Ordinals are used for listing items; such as first, second, and third. The ordinals below the myriad are conventional: cardinal "ten" is paired with ordinal "tenth", hundred is paired with hundredth, thousand is paired with thousandth. Thus, cardinal "myriad" is paired with "myriadth", "deuteriad" with "deuteriadth", and "great myriad" with "great myriadth". Each cardinal has an ordinal, and these ordinals can be used to denote fractions (in the same manner that ordinals are conventionally used). One over a great myriad is "one great myriadth". Double that for "two great myraidths", and so on.   </p>
@@ -570,11 +572,10 @@
 </tr>
 </tbody>
 </table>
-<h2>(Additional) Trivia</h2>
+<h2>Footnotes and (Additional) Trivia</h2>
 <ul>
+<li>In this scale "hecto" refers to 6, as in the ordinal "hektos", but "hecto" can also refer to one hundred, as in "hectogon". To prevent confusion, "Hecaton" is used in place of "hecto", where it would refer to one hundred. Thus "hectiad" is a myriad to the sixth and "hecatoniad" is a myriad to the one hundredth.</li>
 <li>If you prefer, you can make use of a "Great Chilliad Scale", named for a chilliad, or a group of one thousand. The "-iad" suffix would be swapped for "-illiad", such that one million is equal to "one deuterilliad", one billion is equal to "one tritilliad", and so on...  </li>
-<li>A "Deuteron Myriad" is equal to 10^(4 * 10^(4 * 2)), a "Triton Myriad" is equal to 10^(4 * 10^(4 * 3)), and so on...</li>
-<li>A "Myrion Myriad" is equal to 10^(4 * 10^(4 * 10^4))</li>
 <li>An apeirogon has an infinite number of sides; "apeiro" gives the Great Myriad Scale the "Apeiriad" and the "Apeiron Myriad"</li>
 <li>Archimedes' largest Sand Number (the largest described in The Sand Reckoner) is equal to 10^(8 * 10^16), or a "Tetaron Deuteriad".</li>
 <li>"Cola's Enumeration" and the "Ordinal Myriad Scale" are previous attempts to enumerate large numbers, using the Conway Wechsler system, Greek ordinals, and hyperoperations. Ultimately, it is important that each name for a large number is based on the names of smaller numbers, rather than operations or notations. The numbers between "novel numbers", or "milestone numbers", also need to be nameable.</li>

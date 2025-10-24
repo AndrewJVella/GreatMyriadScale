@@ -1,7 +1,7 @@
 import markdown
 
 markdown_string = ""
-with open('GMSrm.md', 'r') as file:
+with open('README.md', 'r') as file:
     markdown_string = file.read()
 
 
@@ -34,4 +34,3 @@ html_string = markdown.markdown(markdown_string, extensions=['tables'])
 
 with open('index.html', 'w') as f:
     f.write(head + html_string + "\n</body>\n</html>")
-
