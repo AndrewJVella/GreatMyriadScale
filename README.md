@@ -2,7 +2,7 @@
 
 Large numbers are commonly named with Latin prefixes, but these Latin names can be difficult to parse.  First, similar names are easily confused (such as "million" and "billion"). Second, with multiple scales in use, values can be ambiguous (one billion is equal to 10^9 or 10^12 depending on use of the short or long scale.) Finally, these parsing difficulties are exacerbated as values increase. (How much is a decillion in the short scale? The Latin for ten is used for one thousand to the eleventh. Madness.) I propose a scale derived from ancient Greek which I call the Great Myriad Scale. (Ok so, this scale actually uses English, with Greco-Latin roots and a bit of wordplay. Spare me your wrath.) The Great Myriad Scale is intended to be an unambiguous scale for counting large numbers. It is based on the myriad, classically equal to ten thousand. Essentially, this scale is intended to be a practical naming convention for impractically large numbers.
 
-If you would like to try an implmentation of this scale, there is a python3 program on the github repository for this page, linked in sources.
+If you would like to try an implementation of this scale, there is a python3 program on the Github repository for this page, linked in sources.
 
 Let's start with a table to count from one to one myriad:
 
@@ -20,7 +20,7 @@ Let's start with a table to count from one to one myriad:
 | 10 | Ten    | 21 | Twenty One | 1000   | Ten Hundred (One Thousand) |
 | 11 | Eleven | 22 | Twenty Two | 1,0000 | One Myriad  (Ten Thousand) |
 
-So, one hundred is the square of ten, and one myriad is the square of one hundred. What is the square of a myriad called? The powers of a myriad do have a naming scheme, described below.
+Note the use of "1,0000" here. Commas group 4 digits in this scale. So, one hundred is the square of ten, and one myriad is the square of one hundred. What is the square of a myriad called? The powers of a myriad do have a naming scheme, described below.
 
 ## The Myriad Powers
 
@@ -62,9 +62,9 @@ Of course, by raising the Great Myriad to the power of a myriad, we get a "Great
 | 10 | Decaton    | 21 | Icosoproton    | 1000   | Decatohecatonon        |
 | 11 | Hendecaton | 22 | Icosodeuteron  | 1,0000 | Myrion                 |
 
-This scheme continues to infinity, with "Myrion Myriad" being followed by "Myriaproton Myriad", which is then followed by "Myriadeuteron Myriad", and so on.
-
 This table grows so fast, that it becomes difficult to describe numbers this large, even in powers of a myriad. For example, a myriad to the power of a tritiad (1,0000^1,0000,0000,0000) is a triton myriad, but a myriad to the power of a tritiad-eleven-hundred-eleven-deuteriad-eleven-hundred-eleven-myriad-eleven-hundred-eleven (1,0000^1,1111,1111,1111) is a "decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great myriad". This all gets very repetitive, so its best to truncate insignificant figures.
+
+"But wait!" you shout, "If a myriad to a myriad is a great myriad, and a myriad to a great myriad is a myrion myriad, then, surely, a myrion myriad is followed by a great myrion myriad in an extension of the above table!" You catch your breath. "A myriad to a myrion myriad needs a name, and then a myriad to that needs a name and so on!" Ok, a myriad to a myrion is a "myriondeuterogon", and a myriad to a myriondeuterogon is a "myriontritogon", and so on... there...
 
 ## Constructing Cardinals, Ordinals, and Fractions
 
@@ -74,7 +74,7 @@ Ordinals are used for listing items; such as first, second, and third. The ordin
 
 ## Why?
 
-Well, there are only so many names, there can only be so much wordplay. To keep all the numbers countable, their names needed to be constructed from smaller numbers. Sure, you can start naming with hyperoperations, but they grow faster, and faster and soon you have an unstable scaffold stretched over growing, turbulent voids ever more difficult to bridge. If you cannot count to a number, then such a number is really a vague suggestion of magnitude, a dream of many zeroes... Oh, you meant "Why invent this counting scale thing anyway? Millions are fine, and we already have scientific notation, and who would ever count from one to myriamyrion myriad anyway?" Well, have you ever played one of those incremental video games, with all the numbers going up to astronomical absurdity? You wake up to "Hey, while you were sleeping, you got twenty quattuorvigintillion points in the tower of tumbleweeds!", and you remember all the sheep you counted last night, hoping for rest, because in the morning, you have a fracture to tend. You have to prevent muscular atrophy by isometrically flexing a muscle several hundred times, and that means even more counting. So you make up new names for new numbers, to spice it up.
+Well, there are only so many names, there can only be so much wordplay. To keep all the numbers countable, their names needed to be constructed from smaller numbers. Sure, you can start naming with hyperoperations, but they grow faster, and faster and soon you have an unstable scaffold stretched over growing, turbulent voids ever more difficult to bridge. If you cannot count to a number, then such a number is really a vague suggestion of magnitude, a dream of many zeroes... Oh, you meant "Why invent this counting scale thing anyway? Millions are fine, and we already have scientific notation, and who would ever count from one to 'myrionmyriagon myriad' anyway?" Well, have you ever played one of those incremental video games, with all the numbers going up to astronomical absurdity? You wake up to "Hey, while you were sleeping, you got twenty quattuorvigintillion points in the tower of tumbleweeds!", and you remember all the sheep you counted last night, hoping for rest, because in the morning, you have a fracture to tend. You have to prevent muscular atrophy by isometrically flexing a muscle several hundred times, and that means even more counting. So you make up new names for new numbers, to spice it up.
 
 You ask yourself "Where do all the number names come from anyway, and when do we run out?" and lo, the rabbit hole! It opens before you to a wonderland of Latin and "googology", and before you realize it you have let the number goblins in. They shout "We want an incremental game! One where players can read all the numbers!" They jump on the bed. "Notations! Bah! Fie on notations!" The number goblins demand a sense of scale. "Notations transform orders of magnitude into mere increments! Madness! People need names! Names!" They grab hold of the bed knobs and shake. The leader shouts in your ear "Don't you understand?! Do it for Archimedes!" The chanting begins. "Conway! Weschler! Knuth!". You are surrounded in a cacophonous, cantankerous, chorus of contention! Then, in unison, a deep breath, and the call of a great horn. "Millinillinillinillinyllion!" With this incantation you are changed, goblinified! There is only one way to lift the spell! Give them their tables, and their powers of ten, so that they might count in numerological novelty until the end of all things!
 
