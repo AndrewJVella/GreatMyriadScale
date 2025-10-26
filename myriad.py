@@ -7,7 +7,7 @@ import time
 
 UNIT = ['', 'prot', 'deuter', 'trit', 'tetar',
            'pempt', 'hect', 'hebdom', 'ogd', 'enat']
-TEN = ['', 'decat', 'icos', 'tricont', 'tetracont', 'pentacont',
+TEN = ['', 'decat', 'icost', 'tricont', 'tetracont', 'pentacont',
        'hexacont', 'heptacont', 'octacont', 'enneacont']
 BIGS = ['hecaton', 'great']
 
