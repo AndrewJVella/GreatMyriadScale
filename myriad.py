@@ -5,12 +5,13 @@
 
 import time
 
-UNIT = ['', 'prot', 'deuter', 'trit', 'tetar',
+UNIT = ['', 'prot', 'deuter', 'trit', 'tesser',
            'pempt', 'hect', 'hebdom', 'ogd', 'enat']
 TEN = ['', 'decat', 'icost', 'tricont', 'tetracont', 'pentacont',
        'hexacont', 'heptacont', 'octacont', 'enneacont']
 BIGS = ['hecaton', 'great']
 
+SUFFIX = "iad" #"iad"
 
 def main():
 
@@ -18,13 +19,11 @@ def main():
 
     PickNumberLoop()
 
-
 def displayloop():
     while True:
         list(10000, 1, 1, 150)
         print("\n" * 150)
         sleep(3)
-
 
 def PickNumberLoop():
     i = "Lorem Ipsum"
@@ -48,13 +47,14 @@ def printMyriad(i):
     print("10000^" + str(i) + " is called \"" + str(m) + "\"")
 
 def myriad(n):
-    suffix = "iad"
+    global SUFFIX
+    suffix = SUFFIX
     #input sanitization
     try:
         n = int(n)
         if n < 0:
             n = n * -1
-            suffix = "iadth"
+            suffix = suffix + "th"
     except ValueError:
         #print(' an error :(')
         return ""
@@ -70,6 +70,7 @@ def myriad(n):
             return 'do' + TEN[1] + suffix
     #end of edge cases
     return str(base(n)) + suffix
+
 def base(n):
     if n < 10:
         return UNIT[n]
@@ -104,12 +105,11 @@ def base(n):
         if g == 1 and m > 0:
             return myriad(m) + " " + BIGS[1] + " myr"
         if g > 1 and m == 0:
-            #if you actually try to track the stack calls by printing base(g) before return there's a lot more than I expected...
+            #if you actually try to track the stack calls by printing base(g) before return there's a lot more than I expected. It outputs the correct number of "greats", but the "-on" suffixes are not implemented yet
+            #print(str(n) + "," + str(g) + " -> " + base(g))
             return BIGS[1] + " " + base(g)
         if g > 1 and m > 0:
-            return myriad(m % 10000) + " great " + base(g)
-    #    return "bigboy"
-        #deuteron myriad and beyond
+            return myriad(m % 10000) + " " + BIGS[1] + " " + base(g)
 
 if __name__ == "__main__":
     main()

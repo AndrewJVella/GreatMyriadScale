@@ -27,8 +27,8 @@ In this scale each power of the myriad get an ancient Greek prefix and an "-iad"
 |----|-------------|----|-----------------|--------|------------------|
 | 1  | Myriad      | 12 | Dodecatiad      | 30     | Tricontiad       |
 | 2  | Deuteriad   | 13 | Decatotritiad   | 40     | Tetracontiad     |
-| 3  | Tritiad     | 14 | Decatotetariad  | 50     | Pentacontiad     |
-| 4  | Tetariad    | 15 | Decatopemptiad  | 60     | Hexacontiad      |
+| 3  | Tritiad     | 14 | Decatotesseriad | 50     | Pentacontiad     |
+| 4  | Tesseriad   | 15 | Decatopemptiad  | 60     | Hexacontiad      |
 | 5  | Pemptiad    | 16 | Decatohectiad   | 70     | Heptacontiad     |
 | 6  | Hectiad     | 17 | Decatohebdomiad | 80     | Octacontiad      |
 | 7  | Hebdomiad   | 18 | Decatogdiad     | 90     | Enneacontiad     |
@@ -47,8 +47,8 @@ Of course, by raising the Great Myriad to the power of a myriad, we get a "Great
 |:--:|:----------:|:--:|:--------------:|:------:|:----------------------:|
 | 1  | Great      | 12 | Dodecaton      | 30     | Triconton              |
 | 2  | Deuteron   | 13 | Decatotriton   | 40     | Tetraconton            |
-| 3  | Triton     | 14 | Decatotetaron  | 50     | Pentaconton            |
-| 4  | Tetaron    | 15 | Decatopempton  | 60     | Hexaconton             |
+| 3  | Triton     | 14 | Decatotesseron | 50     | Pentaconton            |
+| 4  | Tesseron   | 15 | Decatopempton  | 60     | Hexaconton             |
 | 5  | Pempton    | 16 | Decatohecton   | 70     | Heptaconton            |
 | 6  | Hecton     | 17 | Decatohebdomon | 80     | Octaconton             |
 | 7  | Hebdomon   | 18 | Decatogdon     | 90     | Enneaconton            |
@@ -72,7 +72,7 @@ Ordinals are used for listing items; such as first, second, and third. The ordin
 
 Say, for the sake of argument, that you really like the short scale, but not the Latin. You want to count with powers of one thousand, rather than powers of one myriad, or of one million. Well, you can use "chilliads" to count in the "Great Chilliad" Scale. "Chilliad" refers to one thousand, and the square of one thousand would be a "deuterilliad", from "deuteros-chilliad". You can then substitute the third power for "tritilliad", from "Tritos-Chilliad" and continue on accordingly.
 
-If you instead want a super long scale, you can be like mathematician Donald Knuth, and set each new denomination to the square of the previous one. One hundred is the square of ten, and one myriad is the square of one hundred. Then, in Knuth's "Supernatural Numbers", "one myllion" is the square of one myriad, and the square of that is a "byllion". It's easy to rename the "myllion" to a "deuteroniad", and the "byllion" to a "tritoniad", and then continue onward to construct a "Great Myrioniad Scale". 
+If you instead want a super long scale, you can be like mathematician Donald Knuth, and set each new denomination to the square of the previous one. One hundred is the square of ten, and one myriad is the square of one hundred. Then, in Knuth's "Supernatural Numbers", "one myllion" is the square of one myriad, and the square of that is a "byllion". It's easy to rename the "myllion" to a "deuteroniad", and the "byllion" to a "tritoniad", and then continue onward to construct a "Great Myrioniad Scale".
 
 ## Why?
 
@@ -84,7 +84,7 @@ You ask yourself "Where do all the number names come from anyway, and when do we
 ## Footnotes and (Additional) Trivia
 * In the Great Myriad Scale "hecto" refers to 6, as in the ordinal "hektos", but "hecto" can also refer to one hundred, as in "hectogon". To prevent confusion, "Hecaton" is used in place of "hecto", where it would refer to one hundred. Thus "hectiad" is a myriad to the sixth and "hecatoniad" is a myriad to the one hundredth.
 * An apeirogon has an infinite number of sides; "apeiro" gives the Great Myriad Scale the "Apeiriad" and the "Apeiron Myriad"
-* Archimedes' largest Sand Number (the largest described in The Sand Reckoner) is equal to 10^(8 * 10^16), or a "Tetaron Deuteriad".
+* Archimedes' largest Sand Number (the largest described in The Sand Reckoner) is equal to 10^(8 * 10^16), or a "Tesseron Deuteriad".
 * "Cola's Enumeration" and the "Ordinal Myriad Scale" are previous attempts to enumerate large numbers, using the Conway Wechsler system, Greek ordinals, and hyperoperations. Ultimately, it is important that each name for a large number is based on the names of smaller numbers, rather than operations or notations. The numbers between "novel numbers", or "milestone numbers", also need to be nameable.
 
 
@@ -116,7 +116,7 @@ Great Myriad Scale vs Conway-Weschler Short Scale
 | 7       | Ten Hundred Myriad                    | Ten Million                                         |
 | 8       | One Deuteriad                         | One Hundred Million                                 |
 | 12      | One Tritiad                           | One Trillion                                        |
-| 16      | One Tetariad                          | Ten Quadrillion                                     |
+| 16      | One Tesseriad                         | Ten Quadrillion                                     |
 | 20      | One Pemptiad                          | One Hundred Quintillion                             |   
 | 24      | One Hectiad                           | One Septillion                                      |
 | 28      | One Hebdomiad                         | Ten Octillion                                       |
@@ -126,7 +126,7 @@ Great Myriad Scale vs Conway-Weschler Short Scale
 | 44      | One Hendecatiad                       | One Hundred Tredecillion                            |
 | 48      | One Dodecatiad                        | One Quindecillion                                   |
 | 52      | One Decatotritiad                     | Ten Sexdecillion                                    |
-| 56      | One Decatotetariad                    | One Hundred Septendecillion                         |
+| 56      | One Decatotesseriad                   | One Hundred Septendecillion                         |
 | 60      | One Decatopemptiad                    | One Novendecillion                                  |
 | 64      | One Decatohectiad                     | Ten Vigintillion                                    |
 | 68      | One Decatohebdomiad                   | One Hundred Unvigintillion                          |
@@ -156,8 +156,8 @@ Nomenclature Table
 |----|------------|----|-----------------|--------|--------------------------|
 | 1  | Protos     | 12 | Dodecatos       | 30     | Tricontad                |
 | 2  | Deuteros   | 13 | Decatotritos    | 40     | Tetracontad              |
-| 3  | Tritos     | 14 | Decatotetaros   | 50     | Pentacontad              |
-| 4  | Tetaros    | 15 | Decatopemptos   | 60     | Hexacontad               |
+| 3  | Tritos     | 14 | Decatotesseros  | 50     | Pentacontad              |
+| 4  | Tesseros   | 15 | Decatopemptos   | 60     | Hexacontad               |
 | 5  | Pemptos    | 16 | Decatohectos    | 70     | Heptacontad              |
 | 6  | Hectos     | 17 | Decatohebdomos  | 80     | Octacontad               |
 | 7  | Hebdomos   | 18 | Decatogdos      | 90     | Enneacontad              |
