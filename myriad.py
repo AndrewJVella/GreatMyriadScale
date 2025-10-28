@@ -6,7 +6,7 @@
 import time
 
 UNIT = ['', 'prot', 'deuter', 'trit', 'tesser',
-           'pempt', 'hect', 'hebdom', 'ogd', 'enat']
+           'pent', 'hect', 'hebdom', 'ogd', 'enat']
 TEN = ['', 'decat', 'icost', 'tricont', 'tetracont', 'pentacont',
        'hexacont', 'heptacont', 'octacont', 'enneacont']
 BIGS = ['hecaton', 'great']
@@ -80,10 +80,8 @@ def base(n):
         if m == 0:
             return TEN[t]
         if (m < 8): #vowels matter for the 10's. You want "conta", "cato", and "coso", but not "oo" "oe" or "th" to keep demoninations readble. 10000^17 is decato-hebdomiad 10000^18 is decat-ogdiad.
-            if (t < 3):
-                return TEN[t] + "o" + base(m)
-            else:
-                return TEN[t] + "a" + base(m)
+            return TEN[t] + "o" + base(m)
+
         else:
             return TEN[t] +  base(m)
 
@@ -92,10 +90,11 @@ def base(n):
         m = n % 100
         if t == 1:
             return BIGS[0] + base(m)
-        return base(t) + "o" + BIGS[0]  + base(m)
+
+        return base(t) + "e" + BIGS[0]  + base(m)
     if n < 10000: #here there be dragons? I forget. Norovirus is fun.
         t = n // 100
-        return base(n // 100) + "o" + BIGS[0]  + base(n % 100)
+        return base(n // 100) + "e" + BIGS[0]  + base(n % 100)
     #if n < 100000000: # great myriad to great great myriad or deuteron myriad
     else:
         g = n // 10000

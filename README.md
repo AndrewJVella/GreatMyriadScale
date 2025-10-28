@@ -1,5 +1,5 @@
 # The Great Myriad Scale
-The Great Myriad Scale is intended to be a practical convention for describing impractically large numbers. To introduce this passion project, it is simpler to start with what it is not. This is not a notation, like scientific or engineering notation. Nor is this a sales pitch to replace the scale you already count in. This is also not just an arbitrary list of made up big numbers. This scale is designed to be tested, and implemented, so that if you encounter some absurdly large number with a name long and strange, you can think in myriads, and scale it to size. A passion project about counting may seem odd, but if you would like to try an implementation of this scale, there is a python3 program on the Github repository for this page, linked in sources.
+The Great Myriad Scale is intended to be a practical convention for describing impractically large numbers. To introduce this passion project, it is simpler to start with what it is not. This is not a notation, like scientific or engineering notation. Nor is this a sales pitch to replace the scale you already count in. This is also not just an arbitrary list of made up big numbers. This scale is designed to be tested, and implemented, so that if you encounter some absurdly large number with a name long and strange, you can think in myriads, and scale it to size. A passion project about ancient Greek counting may seem odd, but if you would like to try an implementation of this scale, there is a python3 program on the Github repository for this page, linked in sources.
 
 First off, what is a myriad? So, one hundred is the square of ten, and one myriad is the square of one hundred. In other words, a myriad is equal to ten to the power of four (1,0000). Commas group four digits in this scale, so the square of a myriad is written as (1,0000,0000) What is the square of a myriad called? We will get to that. Let's start with a table to count from one to one myriad:
 
@@ -28,12 +28,12 @@ In this scale each power of the myriad get an ancient Greek prefix and an "-iad"
 | 1  | Myriad      | 12 | Dodecatiad      | 30     | Tricontiad       |
 | 2  | Deuteriad   | 13 | Decatotritiad   | 40     | Tetracontiad     |
 | 3  | Tritiad     | 14 | Decatotesseriad | 50     | Pentacontiad     |
-| 4  | Tesseriad   | 15 | Decatopemptiad  | 60     | Hexacontiad      |
-| 5  | Pemptiad    | 16 | Decatohectiad   | 70     | Heptacontiad     |
+| 4  | Tesseriad   | 15 | Decatopentiad   | 60     | Hexacontiad      |
+| 5  | Pentiad     | 16 | Decatohectiad   | 70     | Heptacontiad     |
 | 6  | Hectiad     | 17 | Decatohebdomiad | 80     | Octacontiad      |
 | 7  | Hebdomiad   | 18 | Decatogdiad     | 90     | Enneacontiad     |
 | 8  | Ogdiad      | 19 | Decatenatiad    | 100    | Hecatoniad       |
-| 9  | Enatiad     | 20 | Icostiad        | 500    | Pemptohecatoniad |
+| 9  | Enatiad     | 20 | Icostiad        | 500    | Pentehecatoniad  |
 | 10 | Decatiad    | 21 | Icostoprotiad   | 1000   | Decatohecatoniad |
 | 11 | Hendecatiad | 22 | Icostodeuteriad | 1,0000 | Great Myriad     |
 
@@ -48,13 +48,13 @@ Of course, by raising the Great Myriad to the power of a myriad, we get a "Great
 | 1  | Great      | 12 | Dodecaton      | 30     | Triconton              |
 | 2  | Deuteron   | 13 | Decatotriton   | 40     | Tetraconton            |
 | 3  | Triton     | 14 | Decatotesseron | 50     | Pentaconton            |
-| 4  | Tesseron   | 15 | Decatopempton  | 60     | Hexaconton             |
+| 4  | Tetaron    | 15 | Decatopenton  | 60      | Hexaconton             |
 | 5  | Pempton    | 16 | Decatohecton   | 70     | Heptaconton            |
 | 6  | Hecton     | 17 | Decatohebdomon | 80     | Octaconton             |
 | 7  | Hebdomon   | 18 | Decatogdon     | 90     | Enneaconton            |
 | 8  | Ogdon      | 19 | Decatoenaton   | 100    | Hecatonon              |
-| 9  | Enaton     | 20 | Icoston        | 500    | Pemptohecatonon        |
-| 10 | Decaton    | 21 | Icostoproton   | 1000   | Decatohecatonon        |
+| 9  | Enaton     | 20 | Icoston        | 500    | Pentehecatonon        |
+| 10 | Decaton    | 21 | Icostoproton   | 1000   | Decatehecatonon        |
 | 11 | Hendecaton | 22 | Icostodeuteron | 1,0000 | Myrion                 |
 
 This table grows so fast, that it becomes difficult to describe numbers this large, even in powers of a myriad. For example, a myriad to the power of a tritiad (1,0000^1,0000,0000,0000) is a triton myriad, but a myriad to the power of a tritiad-eleven-hundred-eleven-deuteriad-eleven-hundred-eleven-myriad-eleven-hundred-eleven (1,0000^1,1111,1111,1111) is a "decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great myriad". This all gets very repetitive, so its best to truncate insignificant figures.
@@ -82,29 +82,29 @@ You ask yourself "Where do all the number names come from anyway, and when do we
 
 
 ## Footnotes and (Additional) Trivia
-* In the Great Myriad Scale "hecto" refers to 6, as in the ordinal "hektos", but "hecto" can also refer to one hundred, as in "hectogon". To prevent confusion, "Hecaton" is used in place of "hecto", where it would refer to one hundred. Thus "hectiad" is a myriad to the sixth and "hecatoniad" is a myriad to the one hundredth.
+* In the Great Myriad Scale "hecto" refers to 6, as in the ordinal "hektos", but "hecto" can also refer to one hundred, as in "hectogon". To prevent confusion, "Hecaton" is used in place of "hecto", where it would refer to one hundred. Thus "hectiad" is a myriad to the sixth and "hecatoniad" is a myriad to the one hundredth. Greco-English linguistics is difficult. Nomenclature for this scale is (inexpertly) chosen for readability to a contemporary English speaker.
 * An apeirogon has an infinite number of sides; "apeiro" gives the Great Myriad Scale the "Apeiriad" and the "Apeiron Myriad"
 * Archimedes' largest Sand Number (the largest described in The Sand Reckoner) is equal to 10^(8 * 10^16), or a "Tesseron Deuteriad".
 * "Cola's Enumeration" and the "Ordinal Myriad Scale" are previous attempts to enumerate large numbers, using the Conway Wechsler system, Greek ordinals, and hyperoperations. Ultimately, it is important that each name for a large number is based on the names of smaller numbers, rather than operations or notations. The numbers between "novel numbers", or "milestone numbers", also need to be nameable.
 
 
 ## Sources
+* [Github Repository for this Page](https://github.com/AndrewJVella/GreatMyriadScale/tree/main)
+* [Ancient Greek Numbers](https://en.wiktionary.org/wiki/%CF%84%CE%AD%CF%83%CF%83%CE%B1%CF%81%CE%B5%CF%82)
+* [Archimedes' Sand Number](https://en.wikipedia.org/wiki/The_Sand_Reckoner)
 * [Conway's illion Converter](https://kyodaisuu.github.io/illion/conway.html)
 * [Conway-Weschler System](https://kyodaisuu.github.io/illion/index.html)
 * [Hyperoperation](https://en.wikipedia.org/wiki/Hyperoperation)
 * [List of Polygons and Greek Ordinals](https://en.wikipedia.org/wiki/List_of_polygons)
 * [Myriad](https://en.wikipedia.org/wiki/Myriad)
-* [Ordinal Numeral](https://en.wikipedia.org/wiki/Ordinal_numeral)
-* [Archimedes' Sand Number](https://en.wikipedia.org/wiki/The_Sand_Reckoner)
 * [Knuth's Supernatural Numbers](https://mrob.com/pub/math/largenum-2.html#yllion)
-* [Github Repository for this Page](https://github.com/AndrewJVella/GreatMyriadScale/tree/main)
 
 
 ## Tables
 
 Great Myriad Scale vs Conway-Weschler Short Scale
 
-| e       | Great Myriad                          | Conway-Weschler Short                              |      
+| e       | Great Myriad                          | Conway-Weschler Short                               |      
 |:-------:|:-------------------------------------:|:---------------------------------------------------:|
 | 0       | One                                   | One                                                 |
 | 1       | Ten                                   | Ten                                                 |
@@ -117,7 +117,7 @@ Great Myriad Scale vs Conway-Weschler Short Scale
 | 8       | One Deuteriad                         | One Hundred Million                                 |
 | 12      | One Tritiad                           | One Trillion                                        |
 | 16      | One Tesseriad                         | Ten Quadrillion                                     |
-| 20      | One Pemptiad                          | One Hundred Quintillion                             |   
+| 20      | One Pentiad                           | One Hundred Quintillion                             |   
 | 24      | One Hectiad                           | One Septillion                                      |
 | 28      | One Hebdomiad                         | Ten Octillion                                       |
 | 32      | One Ogdiad                            | One Hundred Nonillion                               |
@@ -127,28 +127,28 @@ Great Myriad Scale vs Conway-Weschler Short Scale
 | 48      | One Dodecatiad                        | One Quindecillion                                   |
 | 52      | One Decatotritiad                     | Ten Sexdecillion                                    |
 | 56      | One Decatotesseriad                   | One Hundred Septendecillion                         |
-| 60      | One Decatopemptiad                    | One Novendecillion                                  |
+| 60      | One Decatopentiad                     | One Novendecillion                                  |
 | 64      | One Decatohectiad                     | Ten Vigintillion                                    |
 | 68      | One Decatohebdomiad                   | One Hundred Unvigintillion                          |
 | 72      | One Decatogdiad                       | One Tresvigintillion                                |
 | 76      | One Decatoenatiad                     | Ten Quattuorvigintillion                            |
 | 80      | One Icosiad                           | One Hundred Quinvigintillion                        |
-| 84      | One Icosoprotiad                      | One Septenvigintillion                              |
-| 88      | One Icosodeuteriad                    | Ten Octovigintillion                                |
-| 92      | One Icosotritiad                      | One Hundred Novenvigintillion                       |
-| 96      | One Icosotetriad                      | One Untrigintillion                                 |
-| 100     | One Icosopemptiad                     | Ten Duotrigintillion                                |
+| 84      | One Icostoprotiad                     | One Septenvigintillion                              |
+| 88      | One Icostodeuteriad                   | Ten Octovigintillion                                |
+| 92      | One Icostotritiad                     | One Hundred Novenvigintillion                       |
+| 96      | One Icostotesseriad                   | One Untrigintillion                                 |
+| 100     | One Icostopentiad                     | Ten Duotrigintillion                                |
 | 200     | One Pentacontiad                      | One Hundred Quinsexagintillion                      |
 | 400     | One Hecatoniad                        | Ten Duotrigintacentillion                           |
 | 800     | One Deuterohecatoniad                 | One Hundred Quinsexagintaducentillion               |
 | 1000    | One Deuterohecatonpentacontiad        | Ten Duotrigintatrecentillion                        |
-| 2000    | One Pemptohecatoniad                  | One Hundred Quinsexagintasescentillion              |
+| 2000    | One Pentahecatoniad                   | One Hundred Quinsexagintasescentillion              |
 | 4000    | One Decatohecatoniad                  | Ten Milliduotrigintatrecentillion                   |
-| 8000    | One Icosohecatoniad                   | One Hundred Billiquinsexagintasescentillion         |
-| 1,0000  | One Icosopemptohecatoniad             | Ten Trilliduotrigintatrecentillion                  |
-| 2,0000  | One Pentacontahecatoniad              | One Hundred Sextilliquinsexagintasescentillion      |
-| 4,0000  | One Great Myriad                      | Ten Tredecilliduotrigintatrecentillion              |
-| 8,0000  | One Great Dueteriad                   | One Hundred Sesvigintilliquinsexagintasescentillion |
+| 8000    | One Icostehecatoniad                  | One Hundred Billiquinsexagintasescentillion         |
+| 10000   | One Icostepentehecatoniad             | Ten Trilliduotrigintatrecentillion                  |
+| 20000   | One Pentacontahecatoniad              | One Hundred Sextilliquinsexagintasescentillion      |
+| 40000   | One Great Myriad                      | Ten Tredecilliduotrigintatrecentillion              |
+| 80000   | One Great Dueteriad                   | One Hundred Sesvigintilliquinsexagintasescentillion |
 
 Nomenclature Table
 
@@ -157,11 +157,11 @@ Nomenclature Table
 | 1  | Protos     | 12 | Dodecatos       | 30     | Tricontad                |
 | 2  | Deuteros   | 13 | Decatotritos    | 40     | Tetracontad              |
 | 3  | Tritos     | 14 | Decatotesseros  | 50     | Pentacontad              |
-| 4  | Tesseros   | 15 | Decatopemptos   | 60     | Hexacontad               |
-| 5  | Pemptos    | 16 | Decatohectos    | 70     | Heptacontad              |
+| 4  | Tesseres   | 15 | Decatopentos    | 60     | Hexacontad               |
+| 5  | Pentad     | 16 | Decatohectos    | 70     | Heptacontad              |
 | 6  | Hectos     | 17 | Decatohebdomos  | 80     | Octacontad               |
 | 7  | Hebdomos   | 18 | Decatogdos      | 90     | Enneacontad              |
 | 8  | Ogdos      | 19 | Decatenatos     | 100    | Hecaton                  |
-| 9  | Enatos     | 20 | Icostos         | 500    | Pemptohecaton            |
-| 10 | Decatos    | 21 | Icostoprotos    | 1000   | Decatohecaton (Chilliad) |
-| 11 | Hendecatos | 22 | Icostodeuteros  | 10000  | Myriad                   |
+| 9  | Enatos     | 20 | Icostos         | 500    | Pentehecaton             |
+| 10 | Decatos    | 21 | Icosteprotos    | 1000   | Decatohecaton (Chilliad) |
+| 11 | Hendecatos | 22 | Icostedeuteros  | 10000  | Myriad                   |
