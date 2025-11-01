@@ -22,6 +22,26 @@
 
 <h1>The Great Myriad Scale</h1>
 <p>The Great Myriad Scale is intended to be a practical convention for describing impractically large numbers. To introduce this passion project, it is simpler to start with what it is not. This is not a notation, like scientific or engineering notation. Nor is this a sales pitch to replace the scale you already count in. This is also not just an arbitrary list of made up big numbers. This scale is designed to be tested, and implemented, so that if you encounter some absurdly large number with a name long and strange, you can think in myriads, and scale it to size. A passion project about ancient Greek counting may seem odd, but if you would like to try an implementation of this scale, there is a python3 program on the Github repository for this page, linked in sources.</p>
+<h2>Design of the Scale</h2>
+<p>So you might be wondering what makes this project a scale, rather than a list of arbitrary numbers and made up names? The Great Myriad Scale was written with design criteria in mind, to achieve a primary goal: this scale should actually be countable. Someone should be able to start from one and (given enough time) count all of the natural numbers, one by one, two, three, all the way to the largest denominations, and on to infinity; every number in between one and a great myriad should have a useful name, constructed from a set of denominations:</p>
+<ul>
+<li>
+<p>Denominations are numbers whose names can be used to construct the names of other numbers, including one, ten, one hundred, one thousand, one myriad, and larger derivatives...</p>
+</li>
+<li>
+<p>The value of a denomination is constant. "One Hundred" always refers to 100, the square of ten. Name conflicts are not allowed. Names must be distinct, and pronounceable. So arbitrary names like "abcd" or "wxyz" are not allowed.   </p>
+</li>
+<li>
+<p>The names of non-denominational numbers are constructed from denominations, with the largest in the middle, products on the left, and sums on the right, such that (2 * 100 + 3) is "two hundred three".</p>
+</li>
+<li>
+<p>Denominations are always named according to one consistent scheme, which is constant throughout the entire scale. This scheme is not arbitrary, but based on a denomination, and compared to it with minimal edge cases. This includes naming powers of the myriad with latinized Ancient Greek, or powers of the million with Latin. In these examples, larger denominations share an etymology with the denomination on which they are based.</p>
+</li>
+<li>
+<p>A denomination can be no larger than the square of a preceding, smaller denomination (with exception for denominations which are there own squares). In other words "one myriad, myriad" may technically describe a number, but "one myriad, myriad, myriad" is just verbose, so is best to name that something shorter. Of course, there are only so many arrangements of letters, so a largest denomination must eventually be reached, but all smaller denominations that can follow this rule, will follow this rule.</p>
+</li>
+</ul>
+<h2>Defining the Myriad</h2>
 <p>First off, what is a myriad? So, one hundred is the square of ten, and one myriad is the square of one hundred. In other words, a myriad is equal to ten to the power of four (1,0000). Commas group four digits in this scale, so the square of a myriad is written as (1,0000,0000) What is the square of a myriad called? We will get to that. Let's start with a table to count from one to one myriad:</p>
 <table>
 <thead>
@@ -192,13 +212,13 @@
 <td>7</td>
 <td>Hebdomiad</td>
 <td>18</td>
-<td>Decatogdiad</td>
+<td>Decatoctiad</td>
 <td>90</td>
 <td>Enneacontiad</td>
 </tr>
 <tr>
 <td>8</td>
-<td>Ogdiad</td>
+<td>Octiad</td>
 <td>19</td>
 <td>Decatenatiad</td>
 <td>100</td>
@@ -216,7 +236,7 @@
 <td>10</td>
 <td>Decatiad</td>
 <td>21</td>
-<td>Icosteprotiad</td>
+<td>Icostoprotiad</td>
 <td>1000</td>
 <td>Decatohecatoniad</td>
 </tr>
@@ -224,7 +244,7 @@
 <td>11</td>
 <td>Hendecatiad</td>
 <td>22</td>
-<td>Icostedeuteriad</td>
+<td>Icostodeuteriad</td>
 <td>1,0000</td>
 <td>Great Myriad</td>
 </tr>
@@ -232,7 +252,7 @@
 </table>
 <p>Each power  of the myriad is named in this pattern until the Great Myriad, which gives this scale its name. The Great Myriad is equal to the myriad raised to the power of a myriad, which is ten to the power of forty thousand. The powers of the Great Myriad are also named with "Great", such that the square of the Great Myriad is the "Great Deuteriad", the cube of the Great Myriad is the "Great Tritiad", and so on. Is that it? No, of course there is more to discuss. Infinity is very big.</p>
 <h2>The Great Myriads</h2>
-<p>Of course, by raising the Great Myriad to the power of a myriad, we get a "Great, Great Myriad". Raise this to the power of a myriad again to get  a "Great, Great, Great Myriad" and so on. To keep names short, a nucleic naming scheme is used (swapping the  suffix used in the above table for "-on"). The "Great, Great Myriad" is called the "Deuteron Myriad". The "Great, Great, Great Myriad" is called the "Triton Myriad", and so on according to the following table, with each item Each item in row n equal to 1,0000^(1,0000^n)</p>
+<p>Of course, by raising the Great Myriad to the power of a myriad, we get a "Great, Great Myriad". Raise this to the power of a myriad again to get  a "Great, Great, Great Myriad" and so on. To keep names short, a adjectival naming scheme is used (swapping the  suffix used in the above table for "-ic"). The "Great, Great Myriad" is called the "Deuteric Great Myriad". The "Great, Great, Great Myriad" is called the "Tritic Great Myriad", and so on according to the following table, with each item Each item in row n equal to 1,0000^(1,0000^n)</p>
 <table>
 <thead>
 <tr>
@@ -249,94 +269,94 @@
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">Great</td>
 <td style="text-align: center;">12</td>
-<td style="text-align: center;">Dodecaton</td>
+<td style="text-align: center;">Dodecatic</td>
 <td style="text-align: center;">30</td>
-<td style="text-align: center;">Triconton</td>
+<td style="text-align: center;">Tricontic</td>
 </tr>
 <tr>
 <td style="text-align: center;">2</td>
-<td style="text-align: center;">Deuteron</td>
+<td style="text-align: center;">Deuteric</td>
 <td style="text-align: center;">13</td>
-<td style="text-align: center;">Decatotriton</td>
+<td style="text-align: center;">Decatotritic</td>
 <td style="text-align: center;">40</td>
-<td style="text-align: center;">Tetraconton</td>
+<td style="text-align: center;">Tetracontic</td>
 </tr>
 <tr>
 <td style="text-align: center;">3</td>
-<td style="text-align: center;">Triton</td>
+<td style="text-align: center;">Tritic</td>
 <td style="text-align: center;">14</td>
-<td style="text-align: center;">Decatotesseron</td>
+<td style="text-align: center;">Decatotesseric</td>
 <td style="text-align: center;">50</td>
-<td style="text-align: center;">Pentaconton</td>
+<td style="text-align: center;">Pentacontic</td>
 </tr>
 <tr>
 <td style="text-align: center;">4</td>
-<td style="text-align: center;">Tetaron</td>
+<td style="text-align: center;">Tesseric</td>
 <td style="text-align: center;">15</td>
-<td style="text-align: center;">Decatopenton</td>
+<td style="text-align: center;">Decatopentic</td>
 <td style="text-align: center;">60</td>
-<td style="text-align: center;">Hexaconton</td>
+<td style="text-align: center;">Hexacontic</td>
 </tr>
 <tr>
 <td style="text-align: center;">5</td>
-<td style="text-align: center;">Pempton</td>
+<td style="text-align: center;">Pentic</td>
 <td style="text-align: center;">16</td>
-<td style="text-align: center;">Decatohecton</td>
+<td style="text-align: center;">Decatohectic</td>
 <td style="text-align: center;">70</td>
-<td style="text-align: center;">Heptaconton</td>
+<td style="text-align: center;">Heptacontic</td>
 </tr>
 <tr>
 <td style="text-align: center;">6</td>
-<td style="text-align: center;">Hecton</td>
+<td style="text-align: center;">Hectic</td>
 <td style="text-align: center;">17</td>
-<td style="text-align: center;">Decatohebdomon</td>
+<td style="text-align: center;">Decatohebdomic</td>
 <td style="text-align: center;">80</td>
-<td style="text-align: center;">Octaconton</td>
+<td style="text-align: center;">Octacontic</td>
 </tr>
 <tr>
 <td style="text-align: center;">7</td>
-<td style="text-align: center;">Hebdomon</td>
+<td style="text-align: center;">Hebdomic</td>
 <td style="text-align: center;">18</td>
-<td style="text-align: center;">Decatogdon</td>
+<td style="text-align: center;">Decatoctic</td>
 <td style="text-align: center;">90</td>
-<td style="text-align: center;">Enneaconton</td>
+<td style="text-align: center;">Enneacontic</td>
 </tr>
 <tr>
 <td style="text-align: center;">8</td>
-<td style="text-align: center;">Ogdon</td>
+<td style="text-align: center;">Octic</td>
 <td style="text-align: center;">19</td>
-<td style="text-align: center;">Decatoenaton</td>
+<td style="text-align: center;">Decatoenatic</td>
 <td style="text-align: center;">100</td>
-<td style="text-align: center;">Hecatonon</td>
+<td style="text-align: center;">Hecatonic</td>
 </tr>
 <tr>
 <td style="text-align: center;">9</td>
-<td style="text-align: center;">Enaton</td>
+<td style="text-align: center;">Enatic</td>
 <td style="text-align: center;">20</td>
-<td style="text-align: center;">Icoston</td>
+<td style="text-align: center;">Icostic</td>
 <td style="text-align: center;">500</td>
-<td style="text-align: center;">Pentehecatonon</td>
+<td style="text-align: center;">Pentehecatonic</td>
 </tr>
 <tr>
 <td style="text-align: center;">10</td>
-<td style="text-align: center;">Decaton</td>
+<td style="text-align: center;">Decatic</td>
 <td style="text-align: center;">21</td>
-<td style="text-align: center;">Icosteproton</td>
+<td style="text-align: center;">Icostoprotic</td>
 <td style="text-align: center;">1000</td>
-<td style="text-align: center;">Decatohecatonon</td>
+<td style="text-align: center;">Decatehecatonic</td>
 </tr>
 <tr>
 <td style="text-align: center;">11</td>
-<td style="text-align: center;">Hendecaton</td>
+<td style="text-align: center;">Hendecatic</td>
 <td style="text-align: center;">22</td>
-<td style="text-align: center;">Icostedeuteron</td>
+<td style="text-align: center;">Icostodeuteric</td>
 <td style="text-align: center;">1,0000</td>
-<td style="text-align: center;">Myrion</td>
+<td style="text-align: center;">Myriadic</td>
 </tr>
 </tbody>
 </table>
-<p>This table grows so fast, that it becomes difficult to describe numbers this large, even in powers of a myriad. For example, a myriad to the power of a tritiad (1,0000^1,0000,0000,0000) is a triton myriad, but a myriad to the power of a tritiad-eleven-hundred-eleven-deuteriad-eleven-hundred-eleven-myriad-eleven-hundred-eleven (1,0000^1,1111,1111,1111) is a "decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great myriad". This all gets very repetitive, so its best to truncate insignificant figures.</p>
-<p>"But wait!" you shout, "If a myriad to a myriad is a great myriad, and a myriad to a great myriad is a myrion myriad, then, surely, a myrion myriad is followed by a great myrion myriad in an extension of the above table!" You catch your breath. "A myriad to a myrion myriad needs a name, and then a myriad to that needs a name and so on!" Ok, a myriad to a myrion is a "myriondeuterogon", and a myriad to a myriondeuterogon is a "myriontritogon", and so on. The "-gon" suffix is applied in the same manner that the "-on" and "-iad" suffixes are applied in respective tables.</p>
+<p>This table grows so fast, that it becomes difficult to describe numbers this large, even in powers of a myriad. For example, a myriad to the power of a tritiad (1,0000^1,0000,0000,0000) is a tritic great myriad, but a myriad to the power of a tritiad-eleven-hundred-eleven-deuteriad-eleven-hundred-eleven-myriad-eleven-hundred-eleven (1,0000^1,1111,1111,1111) is a "decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great myriad". This all gets very repetitive, so its best to truncate insignificant figures.</p>
+<p>"But wait!" you shout, "If a myriad to a myriad is a great myriad, and a myriad to a great myriad is a myriadic great myriad, then, surely, a myriadic great myriad is followed by a great myriadic great myriad in an extension of the above table!" You catch your breath. "A myriad to a myriadic great myriad needs a name, and then a myriad to that needs a name and so on!" Ok, a myriad to a myriadic great myriad is a "myriadeuterogonic great myriad", and a myriad to a myriadeuterogonic great myriad is a "myriatritogonic great myriad", and so on. The "-gon" suffix is applied in the same manner that the "-ic" and "-iad" suffixes are applied in respective tables.</p>
 <h2>Constructing Cardinals, Ordinals, and Fractions</h2>
 <p>Counting the cardinal numbers between large myriads is done as it would be for any conventional denomination: largest in the middle, multipliers on the left, sums on the right. For example, one hundred times two, plus two is "two hundred, two" or "two hundred and two". Therefore, A great myriad times a myriad is a "myriad great myriad". Add one hundred to this and you get "one myriad great myriad, one hundred".</p>
 <p>Ordinals are used for listing items; such as first, second, and third. The ordinals below the myriad are conventional: cardinal "ten" is paired with ordinal "tenth", hundred is paired with hundredth, thousand is paired with thousandth. Thus, cardinal "myriad" is paired with "myriadth", "deuteriad" with "deuteriadth", and "great myriad" with "great myriadth". Each cardinal has an ordinal, and these ordinals can be used to denote fractions (in the same manner that ordinals are conventionally used). One over a great myriad is "one great myriadth". Double that for "two great myraidths", and so on.  </p>
@@ -344,7 +364,7 @@
 <p>Say, for the sake of argument, that you really like the short scale, but not the Latin. You want to count with powers of one thousand, rather than powers of one myriad, or of one million. Well, you can use "chilliads" to count in the "Great Chilliad" Scale. "Chilliad" refers to one thousand, and the square of one thousand would be a "deuterilliad", from "deuteros-chilliad". You can then substitute the third power for "tritilliad", from "Tritos-Chilliad" and continue on accordingly.</p>
 <p>If you instead want a super long scale, you can be like mathematician Donald Knuth, and set each new denomination to the square of the previous one. One hundred is the square of ten, and one myriad is the square of one hundred. Then, in Knuth's "Supernatural Numbers", "one myllion" is the square of one myriad, and the square of that is a "byllion". It's easy to rename the "myllion" to a "deuteroniad", and the "byllion" to a "tritoniad", and then continue onward to construct a "Great Myrioniad Scale".</p>
 <h2>Why?</h2>
-<p>Well, there are only so many names, there can only be so much wordplay. To keep all the numbers countable, their names needed to be constructed from smaller numbers. Sure, you can start naming with hyperoperations, but they grow faster, and faster and soon you have an unstable scaffold stretched over growing, turbulent voids ever more difficult to bridge. If you cannot count to a number, then such a number is really a vague suggestion of magnitude, a dream of many zeroes... Oh, you meant "Why invent this counting scale thing anyway? Millions are fine, and we already have scientific notation, and who would ever count from one to 'myrionmyriagon myriad' anyway?" Well, have you ever played one of those incremental video games, with all the numbers going up to astronomical absurdity? You wake up to "Hey, while you were sleeping, you got twenty quattuorvigintillion points in the tower of tumbleweeds!", and you remember all the sheep you counted last night, hoping for rest, because in the morning, you have a fracture to tend. You have to prevent muscular atrophy by isometrically flexing a muscle several hundred times, and that means even more counting. So you make up new names for new numbers, to spice it up.</p>
+<p>Well, there are only so many names, there can only be so much wordplay. To keep all the numbers countable, their names needed to be constructed from smaller numbers. Sure, you can start naming with hyperoperations, but they grow faster, and faster and soon you have an unstable scaffold stretched over growing, turbulent voids ever more difficult to bridge. If you cannot count to a number, then such a number is really a vague suggestion of magnitude, a dream of many zeroes... Oh, you meant "Why invent this counting scale thing anyway? Millions are fine, and we already have scientific notation, and who would ever count from one to 'myriamyriagonic great myriad' anyway?" Well, have you ever played one of those incremental video games, with all the numbers going up to astronomical absurdity? You wake up to "Hey, while you were sleeping, you got twenty quattuorvigintillion points in the tower of tumbleweeds!", and you remember all the sheep you counted last night, hoping for rest, because in the morning, you have a fracture to tend. You have to prevent muscular atrophy by isometrically flexing a muscle several hundred times, and that means even more counting. So you make up new names for new numbers, to spice it up.</p>
 <p>You ask yourself "Where do all the number names come from anyway, and when do we run out?" and lo, the rabbit hole! It opens before you to a wonderland of Latin and "googology", and before you realize it you have let the number goblins in. They shout "We want an incremental game! One where players can read all the numbers!" They jump on the bed. "Notations! Bah! Fie on notations!" The number goblins demand a sense of scale. "Notations transform orders of magnitude into mere increments! Madness! People need names! Names!" They grab hold of the bed knobs and shake. The leader shouts in your ear "Don't you understand?! Do it for Archimedes!" The chanting begins. "Conway! Weschler! Knuth!". You are surrounded in a cacophonous, cantankerous, chorus of contention! Then, in unison, a deep breath, and the call of a great horn. "Millinillinillinillinyllion!" With this incantation you are changed, goblinified! There is only one way to lift the spell! Give them their tables, and their powers of ten, so that they might count in numerological novelty until the end of all things!</p>
 <h2>Footnotes and (Additional) Trivia</h2>
 <ul>
@@ -448,7 +468,7 @@
 </tr>
 <tr>
 <td style="text-align: center;">32</td>
-<td style="text-align: center;">One Ogdiad</td>
+<td style="text-align: center;">One Octiad</td>
 <td style="text-align: center;">One Hundred Nonillion</td>
 </tr>
 <tr>
@@ -498,7 +518,7 @@
 </tr>
 <tr>
 <td style="text-align: center;">72</td>
-<td style="text-align: center;">One Decatogdiad</td>
+<td style="text-align: center;">One Decatoctiad</td>
 <td style="text-align: center;">One Tresvigintillion</td>
 </tr>
 <tr>
@@ -513,27 +533,27 @@
 </tr>
 <tr>
 <td style="text-align: center;">84</td>
-<td style="text-align: center;">One Icosteprotiad</td>
+<td style="text-align: center;">One Icostoprotiad</td>
 <td style="text-align: center;">One Septenvigintillion</td>
 </tr>
 <tr>
 <td style="text-align: center;">88</td>
-<td style="text-align: center;">One Icostedeuteriad</td>
+<td style="text-align: center;">One Icostodeuteriad</td>
 <td style="text-align: center;">Ten Octovigintillion</td>
 </tr>
 <tr>
 <td style="text-align: center;">92</td>
-<td style="text-align: center;">One Icostetritiad</td>
+<td style="text-align: center;">One Icostotritiad</td>
 <td style="text-align: center;">One Hundred Novenvigintillion</td>
 </tr>
 <tr>
 <td style="text-align: center;">96</td>
-<td style="text-align: center;">One Icostetesseriad</td>
+<td style="text-align: center;">One Icostotesseriad</td>
 <td style="text-align: center;">One Untrigintillion</td>
 </tr>
 <tr>
 <td style="text-align: center;">100</td>
-<td style="text-align: center;">One Icostepentiad</td>
+<td style="text-align: center;">One Icostopentiad</td>
 <td style="text-align: center;">Ten Duotrigintillion</td>
 </tr>
 <tr>
@@ -573,7 +593,7 @@
 </tr>
 <tr>
 <td style="text-align: center;">10000</td>
-<td style="text-align: center;">One Icostepentehecatoniad</td>
+<td style="text-align: center;">One Icostopentehecatoniad</td>
 <td style="text-align: center;">Ten Trilliduotrigintatrecentillion</td>
 </tr>
 <tr>
@@ -588,7 +608,7 @@
 </tr>
 <tr>
 <td style="text-align: center;">80000</td>
-<td style="text-align: center;">One Great Dueteriad</td>
+<td style="text-align: center;">One Great Deuteriad</td>
 <td style="text-align: center;">One Hundred Sesvigintilliquinsexagintasescentillion</td>
 </tr>
 </tbody>
@@ -664,7 +684,7 @@
 </tr>
 <tr>
 <td>8</td>
-<td>Ogdos</td>
+<td>Octad</td>
 <td>19</td>
 <td>Decatenatos</td>
 <td>100</td>
@@ -682,7 +702,7 @@
 <td>10</td>
 <td>Decatos</td>
 <td>21</td>
-<td>Icosteprotos</td>
+<td>Icostoprotos</td>
 <td>1000</td>
 <td>Decatohecaton (Chilliad)</td>
 </tr>
@@ -690,7 +710,7 @@
 <td>11</td>
 <td>Hendecatos</td>
 <td>22</td>
-<td>Icostedeuteros</td>
+<td>Icostodeuteros</td>
 <td>10000</td>
 <td>Myriad</td>
 </tr>

@@ -6,12 +6,14 @@
 import time
 
 UNIT = ['', 'prot', 'deuter', 'trit', 'tesser',
-           'pent', 'hect', 'hebdom', 'ogd', 'enat']
+           'pent', 'hect', 'hebdom', 'oct', 'enat']
 TEN = ['', 'decat', 'icost', 'tricont', 'tetracont', 'pentacont',
        'hexacont', 'heptacont', 'octacont', 'enneacont']
 BIGS = ['hecaton', 'great']
 
-SUFFIX = "iad" #"iad"
+MAX = 3601 # Largest Number = (10000^(10^n))
+
+SUFFIX = "iad"
 
 def main():
 
@@ -44,11 +46,39 @@ def printMyriad(i):
     if (i == 0):
         m = "one"
 
-    print("10000^" + str(i) + " is called \"" + str(m) + "\"")
+        #its linear, but the "greats" can just be tallied up and trucated accordingly
+    if not m == "" and int(i) > 9999999:
+        #seven nines
+        headIndex = 0
+        writingtoOut = True
+        c = 0
+        greats = 0
+        g = BIGS[1][0]
+        r = BIGS[1][1]
+        out = ""
+        while c < len(m) - 1:
+            if m[c] == g and m[c+1] == r:
+                greats += 1
+                if writingtoOut:
+                    headIndex = c
+                    writingtoOut = False
+            if m[c] == " " and not m[c+1] == g:
+                if greats == 1:
+                    out += BIGS[1]
+                if greats > 1:
+                    out +=  myriad(greats, "ic " + BIGS[1])
+                greats = 0
+                writingtoOut = True
+            if writingtoOut:
+                out += m[c]
+            c = c + 1
 
-def myriad(n):
-    global SUFFIX
-    suffix = SUFFIX
+        m = out + "d"
+
+
+    print("10000^" + str(i) + " is called\n\"" + str(m) + "\"")
+
+def myriad(n, suffix = "iad"):
     #input sanitization
     try:
         n = int(n)
@@ -57,6 +87,8 @@ def myriad(n):
             suffix = suffix + "th"
     except ValueError:
         #print(' an error :(')
+        return ""
+    if n > 10 ** MAX:
         return ""
 
     #edge cases
@@ -104,7 +136,7 @@ def base(n):
         if g == 1 and m > 0:
             return myriad(m) + " " + BIGS[1] + " myr"
         if g > 1 and m == 0:
-            #if you actually try to track the stack calls by printing base(g) before return there's a lot more than I expected. It outputs the correct number of "greats", but the "-on" suffixes are not implemented yet
+            #if you actually try to track the stack calls by printing base(g) before return there's a lot more than I expected. It still outputs the correct number of "greats"
             #print(str(n) + "," + str(g) + " -> " + base(g))
             return BIGS[1] + " " + base(g)
         if g > 1 and m > 0:
