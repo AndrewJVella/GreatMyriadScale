@@ -11,9 +11,9 @@ TEN = ['', 'decat', 'icost', 'tricont', 'tetracont', 'pentacont',
        'hexacont', 'heptacont', 'octacont', 'enneacont']
 BIGS = ['hecaton', 'great']
 
-MAX = 3601 # Largest Number = (10000^(10^n))
-
 SUFFIX = "iad"
+
+MAX = 1000
 
 def main():
 
@@ -30,53 +30,64 @@ def displayloop():
 def PickNumberLoop():
     i = "Lorem Ipsum"
     while (not i == ""):
-        i = input("\nGive a power of a myriad (10000^n), and get its name in this scale.\n> ")
-        printMyriad(i)
+        i = input("\nGive a power of ten (10^n), and get its name in this scale.\n> ")
+        printTenPower(i)
 
 def list(end = 1000, skip = 1, start = 1, millis = 0):
 
     i = start
     while i < end + skip:
-        printMyriad(i)
+        printTenPower(i)
         i += skip
         time.sleep(millis / 1000)
 
-def printMyriad(i):
+def printTenPower(e):
+    #this was originally written for powers of the myriad
+    try:
+        tenners = ["one", "ten", "one hundred", "ten hundred"]
+        out = tenners[int(e) % 4]
+    except ValueError:
+        print("Value Error")
+        return
+
+    i = int(e) // 4
     m =  myriad(i)
-    if (i == 0):
-        m = "one"
+    if not m == "" and int(i) > 9999999:  #seven nines
+        m = greatsTruncator(m)
 
-        #its linear, but the "greats" can just be tallied up and trucated accordingly
-    if not m == "" and int(i) > 9999999:
-        #seven nines
-        headIndex = 0
-        writingtoOut = True
-        c = 0
-        greats = 0
-        g = BIGS[1][0]
-        r = BIGS[1][1]
-        out = ""
-        while c < len(m) - 1:
-            if m[c] == g and m[c+1] == r:
-                greats += 1
-                if writingtoOut:
-                    headIndex = c
-                    writingtoOut = False
-            if m[c] == " " and not m[c+1] == g:
-                if greats == 1:
-                    out += BIGS[1]
-                if greats > 1:
-                    out +=  myriad(greats, "ic " + BIGS[1])
-                greats = 0
-                writingtoOut = True
+    if (not m == ""):
+        out = out + " " + m
+    print("10^" + str(e) + " is called\n\"" + str(out) + "\"")
+
+def greatsTruncator(m):
+    #its linear, but the "greats" can just be tallied up and trucated accordingly
+    #unfortunately this code is kind of fragile and does not play nicely with refactoring
+    #so it has to go in its own little function
+    headIndex = 0
+    writingtoOut = True
+    c = 0
+    greats = 0
+    g = BIGS[1][0]
+    r = BIGS[1][1]
+    o = ""
+    while c < len(m) - 1:
+        if m[c] == g and m[c+1] == r:
+            greats += 1
             if writingtoOut:
-                out += m[c]
-            c = c + 1
+                headIndex = c
+                writingtoOut = False
+        if m[c] == " " and not m[c+1] == g:
+            if greats == 1:
+                o += BIGS[1]
+            if greats > 1:
+                o +=  myriad(greats, "ic " + BIGS[1])
+            greats = 0
+            writingtoOut = True
+        if writingtoOut:
+            o += m[c]
+        c = c + 1
+    return o + "d"
 
-        m = out + "d"
-
-
-    print("10000^" + str(i) + " is called\n\"" + str(m) + "\"")
 
 def myriad(n, suffix = "iad"):
     #input sanitization
@@ -90,7 +101,6 @@ def myriad(n, suffix = "iad"):
         return ""
     if n > 10 ** MAX:
         return ""
-
     #edge cases
     if n == 0:
         return '' #one
