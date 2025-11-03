@@ -42,38 +42,38 @@ Now it's time to get to that square of a myriad, and the larger powers.
 In this scale each power of the myriad get an ancient Greek prefix and an "-iad" suffix. For example "deuteriad" is a myriad to the second power. it is named by shortening "deuteros myriad", with "deuteros" referring to "second". Each successive power follows this scheme:   
 
 | n  | Name        | n  | Name            | n      | Name             |    
-|----|-------------|----|-----------------|--------|------------------|
-| 1  | Myriad      | 12 | Dodecatiad      | 30     | Tricontiad       |
-| 2  | Deuteriad   | 13 | Decatotritiad   | 40     | Tetracontiad     |
-| 3  | Tritiad     | 14 | Decatotesseriad | 50     | Pentacontiad     |
-| 4  | Tesseriad   | 15 | Decatopentiad   | 60     | Hexacontiad      |
-| 5  | Pentiad     | 16 | Decatohectiad   | 70     | Heptacontiad     |
-| 6  | Hectiad     | 17 | Decatohebdomiad | 80     | Octacontiad      |
-| 7  | Hebdomiad   | 18 | Decatoctiad     | 90     | Enneacontiad     |
-| 8  | Octiad      | 19 | Decatenatiad    | 100    | Hecatoniad       |
-| 9  | Enatiad     | 20 | Icostiad        | 500    | Pentehecatoniad  |
-| 10 | Decatiad    | 21 | Icostoprotiad   | 1000   | Decatohecatoniad |
-| 11 | Hendecatiad | 22 | Icostodeuteriad | 1,0000 | Great Myriad     |
+|----|---------------|----|-----------------|--------|------------------|
+| 1  | Myriad        | 12 | Decatodeuteriad | 30     | Tricontiad       |
+| 2  | Deuteriad     | 13 | Decatotritiad   | 40     | Tetracontiad     |
+| 3  | Tritiad       | 14 | Decatotesseriad | 50     | Pentacontiad     |
+| 4  | Tesseriad     | 15 | Decatopentiad   | 60     | Hexacontiad      |
+| 5  | Pentiad       | 16 | Decatohectiad   | 70     | Heptacontiad     |
+| 6  | Hectiad       | 17 | Decatohebdomiad | 80     | Octacontiad      |
+| 7  | Hebdomiad     | 18 | Decatoctiad     | 90     | Enneacontiad     |
+| 8  | Octiad        | 19 | Decatenatiad    | 100    | Hecatoniad       |
+| 9  | Enatiad       | 20 | Icostiad        | 500    | Pentehecatoniad  |
+| 10 | Decatiad      | 21 | Icostoprotiad   | 1000   | Decatohecatoniad |
+| 11 | Decatoprotiad | 22 | Icostodeuteriad | 1,0000 | Great Myriad     |
 
-Each power  of the myriad is named in this pattern until the Great Myriad, which gives this scale its name. The Great Myriad is equal to the myriad raised to the power of a myriad, which is ten to the power of forty thousand. The powers of the Great Myriad are also named with "Great", such that the square of the Great Myriad is the "Great Deuteriad", the cube of the Great Myriad is the "Great Tritiad", and so on. Is that it? No, of course there is more to discuss. Infinity is very big.
+Each power of the myriad is named in this pattern until the Great Myriad, which gives this scale its name. The Great Myriad is equal to the myriad raised to the power of a myriad, which is ten to the power of forty thousand. The powers of the Great Myriad are also named with "Great", such that the square of the Great Myriad is the "Great Deuteriad", the cube of the Great Myriad is the "Great Tritiad", and so on. Is that it? No, of course there is more to discuss. Infinity is very big.
 
 ## The Great Myriads
 
 Of course, by raising the Great Myriad to the power of a myriad, we get a "Great, Great Myriad". Raise this to the power of a myriad again to get  a "Great, Great, Great Myriad" and so on. To keep names short, a adjectival naming scheme is used (swapping the  suffix used in the above table for "-ic"). The "Great, Great Myriad" is called the "Deuteric Great Myriad". The "Great, Great, Great Myriad" is called the "Tritic Great Myriad", and so on according to the following table, with each item Each item in row n equal to 1,0000^(1,0000^n)
 
-| n  | Name       | n  | Name           | n      | Name                   |    
-|:--:|:----------:|:--:|:--------------:|:------:|:----------------------:|
-| 1  | Great      | 12 | Dodecatic      | 30     | Tricontic              |
-| 2  | Deuteric   | 13 | Decatotritic   | 40     | Tetracontic            |
-| 3  | Tritic     | 14 | Decatotesseric | 50     | Pentacontic            |
-| 4  | Tesseric   | 15 | Decatopentic   | 60     | Hexacontic             |
-| 5  | Pentic     | 16 | Decatohectic   | 70     | Heptacontic            |
-| 6  | Hectic     | 17 | Decatohebdomic | 80     | Octacontic             |
-| 7  | Hebdomic   | 18 | Decatoctic     | 90     | Enneacontic            |
-| 8  | Octic      | 19 | Decatoenatic   | 100    | Hecatonic              |
-| 9  | Enatic     | 20 | Icostic        | 500    | Pentehecatonic         |
-| 10 | Decatic    | 21 | Icostoprotic   | 1000   | Decatehecatonic        |
-| 11 | Hendecatic | 22 | Icostodeuteric | 1,0000 | Myriadic               |
+| n  | Name         | n  | Name           | n      | Name                   |    
+|:--:|:------------:|:--:|:--------------:|:------:|:----------------------:|
+| 1  | Great        | 12 | Decatodueteric | 30     | Tricontic              |
+| 2  | Deuteric     | 13 | Decatotritic   | 40     | Tetracontic            |
+| 3  | Tritic       | 14 | Decatotesseric | 50     | Pentacontic            |
+| 4  | Tesseric     | 15 | Decatopentic   | 60     | Hexacontic             |
+| 5  | Pentic       | 16 | Decatohectic   | 70     | Heptacontic            |
+| 6  | Hectic       | 17 | Decatohebdomic | 80     | Octacontic             |
+| 7  | Hebdomic     | 18 | Decatoctic     | 90     | Enneacontic            |
+| 8  | Octic        | 19 | Decatoenatic   | 100    | Hecatonic              |
+| 9  | Enatic       | 20 | Icostic        | 500    | Pentehecatonic         |
+| 10 | Decatic      | 21 | Icostoprotic   | 1000   | Decatehecatonic        |
+| 11 | Decatoprotic | 22 | Icostodeuteric | 1,0000 | Myriadic               |
 
 This table grows so fast, that it becomes difficult to describe numbers this large, even in powers of a myriad. For example, a myriad to the power of a tritiad (1,0000^1,0000,0000,0000) is a tritic great myriad, but a myriad to the power of a tritiad-eleven-hundred-eleven-deuteriad-eleven-hundred-eleven-myriad-eleven-hundred-eleven (1,0000^1,1111,1111,1111) is a "decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great myriad". This all gets very repetitive, so its best to truncate insignificant figures.
 
@@ -100,7 +100,7 @@ You ask yourself "Where do all the number names come from anyway, and when do we
 
 
 ## Footnotes and (Additional) Trivia
-* In the Great Myriad Scale "hecto" refers to 6, as in the ordinal "hektos", but "hecto" can also refer to one hundred, as in "hectogon". To prevent confusion, "Hecaton" is used in place of "hecto", where it would refer to one hundred. Thus "hectiad" is a myriad to the sixth and "hecatoniad" is a myriad to the one hundredth. Greco-English linguistics is difficult. Nomenclature for this scale is (inexpertly) chosen for readability to a contemporary English speaker.
+* In the Great Myriad Scale "hecto" refers to 6, as in the ordinal "hektos", but "hecto" can also refer to one hundred, as in "hectogon". To prevent confusion, "Hecaton" is used in place of "hecto", where it would refer to one hundred. Thus "hectiad" is a myriad to the sixth and "hecatoniad" is a myriad to the one hundredth. "Hendecatos" and "Dodecatos" (for 11 and 12) produce similar edge cases, and so, are unused.  Greco-English linguistics is difficult. Nomenclature for this scale is (inexpertly) chosen for readability to a contemporary English speaker. 
 * An apeirogon has an infinite number of sides; "apeiro" gives the Great Myriad Scale the "Apeiriad" and the "Apeiron Myriad"
 * Archimedes' largest Sand Number (the largest described in The Sand Reckoner) is equal to 10^(8 * 10^16), or a "Tesseron Deuteriad".
 * "Cola's Enumeration" and the "Ordinal Myriad Scale" are previous attempts to enumerate large numbers, using the Conway Wechsler system, Greek ordinals, and hyperoperations. Ultimately, it is important that each name for a large number is based on the names of smaller numbers, rather than operations or notations. The numbers between "novel numbers", or "milestone numbers", also need to be nameable.
@@ -141,8 +141,8 @@ Great Myriad Scale vs Conway-Weschler Short Scale
 | 32      | One Octiad                            | One Hundred Nonillion                               |
 | 36      | One Enatiad                           | One Undecillion                                     |
 | 40      | One Decatiad                          | Ten Duodecillion                                    |
-| 44      | One Hendecatiad                       | One Hundred Tredecillion                            |
-| 48      | One Dodecatiad                        | One Quindecillion                                   |
+| 44      | One Decatoprotiad                     | One Hundred Tredecillion                            |
+| 48      | One Decatodeuteriad                   | One Quindecillion                                   |
 | 52      | One Decatotritiad                     | Ten Sexdecillion                                    |
 | 56      | One Decatotesseriad                   | One Hundred Septendecillion                         |
 | 60      | One Decatopentiad                     | One Novendecillion                                  |
@@ -170,16 +170,16 @@ Great Myriad Scale vs Conway-Weschler Short Scale
 
 Nomenclature Table
 
-| n  | Name       | n  | Name            | n      | Name                     |    
-|----|------------|----|-----------------|--------|--------------------------|
-| 1  | Protos     | 12 | Dodecatos       | 30     | Tricontad                |
-| 2  | Deuteros   | 13 | Decatotritos    | 40     | Tetracontad              |
-| 3  | Tritos     | 14 | Decatotesseros  | 50     | Pentacontad              |
-| 4  | Tesseres   | 15 | Decatopentos    | 60     | Hexacontad               |
-| 5  | Pentad     | 16 | Decatohectos    | 70     | Heptacontad              |
-| 6  | Hectos     | 17 | Decatohebdomos  | 80     | Octacontad               |
-| 7  | Hebdomos   | 18 | Decatogdos      | 90     | Enneacontad              |
-| 8  | Octad      | 19 | Decatenatos     | 100    | Hecaton                  |
-| 9  | Enatos     | 20 | Icostos         | 500    | Pentehecaton             |
-| 10 | Decatos    | 21 | Icostoprotos    | 1000   | Decatohecaton (Chilliad) |
-| 11 | Hendecatos | 22 | Icostodeuteros  | 10000  | Myriad                   |
+| n  | Name         | n  | Name            | n      | Name                     |    
+|----|--------------|----|-----------------|--------|--------------------------|
+| 1  | Protos       | 12 | Decatodeuteros  | 30     | Tricontad                |
+| 2  | Deuteros     | 13 | Decatotritos    | 40     | Tetracontad              |
+| 3  | Tritos       | 14 | Decatotesseros  | 50     | Pentacontad              |
+| 4  | Tesseres     | 15 | Decatopentos    | 60     | Hexacontad               |
+| 5  | Pentad       | 16 | Decatohectos    | 70     | Heptacontad              |
+| 6  | Hectos       | 17 | Decatohebdomos  | 80     | Octacontad               |
+| 7  | Hebdomos     | 18 | Decatogdos      | 90     | Enneacontad              |
+| 8  | Octad        | 19 | Decatenatos     | 100    | Hecaton                  |
+| 9  | Enatos       | 20 | Icostos         | 500    | Pentehecaton             |
+| 10 | Decatos      | 21 | Icostoprotos    | 1000   | Decatohecaton (Chilliad) |
+| 11 | Decatoprotos | 22 | Icostodeuteros  | 10000  | Myriad                   |

@@ -17,7 +17,7 @@ MAX = 1000
 
 def main():
 
-    print("This program is a proof of concept for the Great Myriad Scale.\nThis scale names large numbers with myriads, rather than millions.\nYou can find more details on that in the readme.\nThis program is a fork of \"Conway's illion Converter\" by kyoda")
+    print("\nThis program is a proof of concept for the Great Myriad Scale.\nThis scale names large numbers with myriads, rather than millions.\nYou can find more details on that in the readme.\nThis program is based on \"Conway's illion Converter\" by kyoda")
 
     PickNumberLoop()
 
@@ -27,27 +27,57 @@ def displayloop():
         print("\n" * 150)
         sleep(3)
 
+def parseInput(i):
+    i = input(i)
+    print()
+    i = i.replace(" ", "")
+
+    args = i.split(":")
+
+    if len(args) < 2:
+        return printTenPower(i)
+    if len(args) == 2:
+        return list(args[0], args[1])
+    if len(args) == 3:
+        return list(args[0], args[1], args[2])
+    if len(args) > 3:
+        return list(args[0], args[1], args[2], args[3])
+
 def PickNumberLoop():
     i = "Lorem Ipsum"
     while (not i == ""):
-        i = input("\nGive a power of ten (10^n), and get its name in this scale.\n> ")
-        printTenPower(i)
+        i = parseInput("\nGive a power of ten (10^n), and get its name in the Great Myriad Scale.\nUse colons to list (start:stop:skip).\n> ")
 
-def list(end = 1000, skip = 1, start = 1, millis = 0):
+def list(start = 1, end = 1, skip = 1, millis = 0):
+
+    try:
+        end = int(end)
+        skip = int(skip)
+        start = int(start)
+        millis = int(millis)
+    except ValueError:
+        print ("Value Error")
+        return ""
 
     i = start
-    while i < end + skip:
-        printTenPower(i)
+    while i <= end:
+        #print(i)
+        printTenPower(str(i), False)
+        print()
         i += skip
         time.sleep(millis / 1000)
 
-def printTenPower(e):
+def printTenPower(e, fullMessage = True):
     #this was originally written for powers of the myriad
     try:
-        tenners = ["one", "ten", "one hundred", "ten hundred"]
+        tenners = ["One", "Ten", "One Hundred", "Ten Hundred"]
         out = tenners[int(e) % 4]
     except ValueError:
         print("Value Error")
+        return ""
+
+    if int(e) < 0:
+        print("Please use non-negative integers.")
         return
 
     i = int(e) // 4
@@ -56,8 +86,12 @@ def printTenPower(e):
         m = greatsTruncator(m)
 
     if (not m == ""):
-        out = out + " " + m
-    print("10^" + str(e) + " is called\n\"" + str(out) + "\"")
+        out = (out + " " + m).title()
+    if fullMessage:
+        print("10^" + str(e) + " is called\n\"" + str(out) + "\"")
+    else:
+        print("10^" + str(e) + " -> \"" + str(out) + "\"")
+    return out
 
 def greatsTruncator(m):
     #its linear, but the "greats" can just be tallied up and trucated accordingly
@@ -92,7 +126,7 @@ def greatsTruncator(m):
 def myriad(n, suffix = "iad"):
     #input sanitization
     try:
-        n = int(n)
+        n = int(n) #the myriad function can handle negative integers
         if n < 0:
             n = n * -1
             suffix = suffix + "th"
@@ -106,10 +140,7 @@ def myriad(n, suffix = "iad"):
         return '' #one
     if n == 1:
             return 'myriad'
-    if n == 11:
-        return 'hen' + TEN[1] + suffix
-    if n == 12:
-            return 'do' + TEN[1] + suffix
+
     #end of edge cases
     return str(base(n)) + suffix
 
