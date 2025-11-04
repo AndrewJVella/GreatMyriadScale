@@ -3,7 +3,6 @@
 #This program is a fork of Conway's Illion Converter by kyoda
 #The Great Myriad Scale is created by Andrew
 
-import time
 
 UNIT = ['', 'prot', 'deuter', 'trit', 'tesser',
            'pent', 'hect', 'hebdom', 'oct', 'enat']
@@ -16,16 +15,8 @@ SUFFIX = "iad"
 MAX = 1000
 
 def main():
-
-    print("\nThis program is a proof of concept for the Great Myriad Scale.\nThis scale names large numbers with myriads, rather than millions.\nYou can find more details on that in the readme.\nThis program is based on \"Conway's illion Converter\" by kyoda")
-
+    print("\nThis program is a proof of concept for the Great Myriad Scale.\nThis scale names large numbers with myriads, rather than millions.\nYou can find more details on that in the readme.\nThis program is based on \"Conway's illion Converter\" by kyoda.")
     PickNumberLoop()
-
-def displayloop():
-    while True:
-        list(10000, 1, 1, 150)
-        print("\n" * 150)
-        sleep(3)
 
 def parseInput(i):
     i = input(i)
@@ -48,13 +39,12 @@ def PickNumberLoop():
     while (not i == ""):
         i = parseInput("\nGive a power of ten (10^n), and get its name in the Great Myriad Scale.\nUse colons to list (start:stop:skip).\n> ")
 
-def list(start = 1, end = 1, skip = 1, millis = 0):
+def list(start = 1, end = 1, skip = 1):
 
     try:
         end = int(end)
         skip = int(skip)
         start = int(start)
-        millis = int(millis)
     except ValueError:
         print ("Value Error")
         return ""
@@ -62,12 +52,11 @@ def list(start = 1, end = 1, skip = 1, millis = 0):
     i = start
     while i <= end:
         #print(i)
-        printTenPower(str(i), False)
+        printTenPower(str(i))
         print()
         i += skip
-        time.sleep(millis / 1000)
 
-def printTenPower(e, fullMessage = True):
+def printTenPower(e):
     #this was originally written for powers of the myriad
     try:
         tenners = ["One", "Ten", "One Hundred", "Ten Hundred"]
@@ -87,10 +76,8 @@ def printTenPower(e, fullMessage = True):
 
     if (not m == ""):
         out = (out + " " + m).title()
-    if fullMessage:
-        print("10^" + str(e) + " is called\n\"" + str(out) + "\"")
-    else:
-        print("10^" + str(e) + " -> \"" + str(out) + "\"")
+
+    print("10^" + str(e) + " = \"" + str(out) + "\"")
     return out
 
 def greatsTruncator(m):
