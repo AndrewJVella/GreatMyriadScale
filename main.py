@@ -6,6 +6,7 @@ import million
 def main():
     print(getMyriadTable())
     print(getScaleTable())
+    #input("Push enter to close")
 
 def genericTable():
     # Column headers
@@ -39,32 +40,16 @@ def getMyriadTable():
 
 def getScaleTable():
     headers = ["e", "Great Myriad", "Conway-Weschler Short", "Conway-Weschler Long"]
-    data = [["0", "<m>", "<s>", "<l>"],
-            ["1", "<m>", "<s>", "<l>"],
-            ["2", "<m>", "<s>", "<l>"],
-            ["3", "<m>", "<s>", "<l>"],
-            ["4", "<m>", "<s>", "<l>"],
-            ["5", "<m>", "<s>", "<l>"],
-            ["6", "<m>", "<s>", "<l>"],
-            ["7", "<m>", "<s>", "<l>"],
-            ["8", "<m>", "<s>", "<l>"],
-            ["12", "<m>", "<s>", "<l>"],
-            ["16", "<m>", "<s>", "<l>"],
-            ["20", "<m>", "<s>", "<l>"],
-            ["24", "<m>", "<s>", "<l>"],
-            ["28", "<m>", "<s>", "<l>"],
-            ["32", "<m>", "<s>", "<l>"],
-            ["36", "<m>", "<s>", "<l>"],
-            ["40", "<m>", "<s>", "<l>"],
-            ["44", "<m>", "<s>", "<l>"],
-            ["48", "<m>", "<s>", "<l>"],
-            ["52", "<m>", "<s>", "<l>"],
-            ["56", "<m>", "<s>", "<l>"],
-            ["60", "<m>", "<s>", "<l>"],
-            ["64", "<m>", "<s>", "<l>"],
-            ["68", "<m>", "<s>", "<l>"],
-            ["72", "<m>", "<s>", "<l>"],
-    ]
+    data = [["0", "<m>", "<s>", "<l>"]]
+    t = 1
+    while (t < 1000000):
+        for i in range (1 * t, 8 * t, 1 * t):
+            data.append([str(i), "<m>", "<s>", "<l>"])
+        for i in range (8 * t, 100 * t, 4 * t):
+            data.append([str(i), "<m>", "<s>", "<l>"])
+        t = t * 100
+    data.append([str(t), "<m>", "<s>", "<l>"])
+
     return tablegen(headers, data, "Table of Scales")
 
 
