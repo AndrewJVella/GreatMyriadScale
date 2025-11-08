@@ -1,3 +1,6 @@
+<!-- These html comments are used as markers for a table updater. text between the markers gets overwritten with a table generated with the latest version of the scale -->
+
+
 # The Great Myriad Scale
 
 The Great Myriad Scale is intended to be a practical convention for describing impractically large numbers. To introduce this passion project, it is simpler to start with what it is not. This is not a notation, like scientific or engineering notation. Nor is this a sales pitch to replace the scale you already count in. This is also not just an arbitrary list of made up big numbers. This scale is designed to be tested, and implemented, so that if you encounter some absurdly large number with a name long and strange, you can think in myriads, and scale it to size. A passion project about ancient Greek counting may seem odd, but if you would like to try an implementation of this scale, there is a python3 program on the Github repository for this page, linked in sources.
@@ -41,7 +44,9 @@ Now it's time to get to that square of a myriad, and the larger powers.
 
 In this scale each power of the myriad get an ancient Greek prefix and an "-iad" suffix. For example "deuteriad" is a myriad to the second power. it is named by shortening "deuteros myriad", with "deuteros" referring to "second". Each successive power follows this scheme:   
 
-| n  | Name        | n  | Name            | n      | Name             |    
+<!-- table 1 -->
+
+| n  | Name          | n  | Name            | n      | Name             |    
 |----|---------------|----|-----------------|--------|------------------|
 | 1  | Myriad        | 12 | Decatodeuteriad | 30     | Tricontiad       |
 | 2  | Deuteriad     | 13 | Decatotritiad   | 40     | Tetracontiad     |
@@ -55,11 +60,16 @@ In this scale each power of the myriad get an ancient Greek prefix and an "-iad"
 | 10 | Decatiad      | 21 | Icostoprotiad   | 1000   | Decatohecatoniad |
 | 11 | Decatoprotiad | 22 | Icostodeuteriad | 1,0000 | Great Myriad     |
 
+<!-- end table 1 -->
+
 Each power of the myriad is named in this pattern until the Great Myriad, which gives this scale its name. The Great Myriad is equal to the myriad raised to the power of a myriad, which is ten to the power of forty thousand. The powers of the Great Myriad are also named with "Great", such that the square of the Great Myriad is the "Great Deuteriad", the cube of the Great Myriad is the "Great Tritiad", and so on. Is that it? No, of course there is more to discuss. Infinity is very big.
 
 ## The Great Myriads
 
 Of course, by raising the Great Myriad to the power of a myriad, we get a "Great, Great Myriad". Raise this to the power of a myriad again to get  a "Great, Great, Great Myriad" and so on. To keep names short, a adjectival naming scheme is used (swapping the  suffix used in the above table for "-ic"). The "Great, Great Myriad" is called the "Deuteric Great Myriad". The "Great, Great, Great Myriad" is called the "Tritic Great Myriad", and so on according to the following table, with each item Each item in row n equal to 1,0000^(1,0000^n)
+
+<!-- table 2 -->
+
 
 | n  | Name         | n  | Name           | n      | Name                   |    
 |:--:|:------------:|:--:|:--------------:|:------:|:----------------------:|
@@ -74,6 +84,9 @@ Of course, by raising the Great Myriad to the power of a myriad, we get a "Great
 | 9  | Enatic       | 20 | Icostic        | 500    | Pentehecatonic         |
 | 10 | Decatic      | 21 | Icostoprotic   | 1000   | Decatehecatonic        |
 | 11 | Decatoprotic | 22 | Icostodeuteric | 1,0000 | Myriadic               |
+
+<!-- end table 2 -->
+
 
 This table grows so fast, that it becomes difficult to describe numbers this large, even in powers of a myriad. For example, a myriad to the power of a tritiad (1,0000^1,0000,0000,0000) is a tritic great myriad, but a myriad to the power of a tritiad-eleven-hundred-eleven-deuteriad-eleven-hundred-eleven-myriad-eleven-hundred-eleven (1,0000^1,1111,1111,1111) is a "decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great myriad". This all gets very repetitive, so its best to truncate insignificant figures.
 
@@ -100,7 +113,7 @@ You ask yourself "Where do all the number names come from anyway, and when do we
 
 
 ## Footnotes and (Additional) Trivia
-* In the Great Myriad Scale "hecto" refers to 6, as in the ordinal "hektos", but "hecto" can also refer to one hundred, as in "hectogon". To prevent confusion, "Hecaton" is used in place of "hecto", where it would refer to one hundred. Thus "hectiad" is a myriad to the sixth and "hecatoniad" is a myriad to the one hundredth. "Hendecatos" and "Dodecatos" (for 11 and 12) produce similar edge cases, and so, are unused.  Greco-English linguistics is difficult. Nomenclature for this scale is (inexpertly) chosen for readability to a contemporary English speaker. 
+* In the Great Myriad Scale "hecto" refers to 6, as in the ordinal "hektos", but "hecto" can also refer to one hundred, as in "hectogon". To prevent confusion, "Hecaton" is used in place of "hecto", where it would refer to one hundred. Thus "hectiad" is a myriad to the sixth and "hecatoniad" is a myriad to the one hundredth. "Hendecatos" and "Dodecatos" (for 11 and 12) produce similar edge cases, and so, are unused.  Greco-English linguistics is difficult. Nomenclature for this scale is (inexpertly) chosen for readability to a contemporary English speaker.
 * An apeirogon has an infinite number of sides; "apeiro" gives the Great Myriad Scale the "Apeiriad" and the "Apeiron Myriad"
 * Archimedes' largest Sand Number (the largest described in The Sand Reckoner) is equal to 10^(8 * 10^16), or a "Tesseron Deuteriad".
 * "Cola's Enumeration" and the "Ordinal Myriad Scale" are previous attempts to enumerate large numbers, using the Conway Wechsler system, Greek ordinals, and hyperoperations. Ultimately, it is important that each name for a large number is based on the names of smaller numbers, rather than operations or notations. The numbers between "novel numbers", or "milestone numbers", also need to be nameable.
@@ -121,6 +134,9 @@ You ask yourself "Where do all the number names come from anyway, and when do we
 ## Tables
 
 Great Myriad Scale vs Conway-Weschler Short Scale
+
+<!-- table 3 -->
+
 
 | e       | Great Myriad                          | Conway-Weschler Short                               |      
 |:-------:|:-------------------------------------:|:---------------------------------------------------:|
@@ -168,7 +184,13 @@ Great Myriad Scale vs Conway-Weschler Short Scale
 | 40000   | One Great Myriad                      | Ten Tredecilliduotrigintatrecentillion              |
 | 80000   | One Great Deuteriad                   | One Hundred Sesvigintilliquinsexagintasescentillion |
 
+<!-- end table 3 -->
+
+
 Nomenclature Table
+
+<!-- table 4 -->
+
 
 | n  | Name         | n  | Name            | n      | Name                     |    
 |----|--------------|----|-----------------|--------|--------------------------|
@@ -183,3 +205,5 @@ Nomenclature Table
 | 9  | Enatos       | 20 | Icostos         | 500    | Pentehecaton             |
 | 10 | Decatos      | 21 | Icostoprotos    | 1000   | Decatohecaton (Chilliad) |
 | 11 | Decatoprotos | 22 | Icostodeuteros  | 10000  | Myriad                   |
+
+<!-- end table 4 -->

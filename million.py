@@ -1,5 +1,7 @@
 #runnable illion converter, fork of kyoda's illion converter
 
+import sys
+
 DESCRIPTION = "show name of N'th zillion number"
 ISOLATE = ['ni', 'mi', 'bi', 'tri', 'quadri',
            'quinti', 'sexti', 'septi', 'octi', 'noni']
@@ -16,23 +18,46 @@ PREC_HUN = ['', 'NX', 'N', 'NS', 'NS', 'NS', 'N', 'N', 'MX', '']
 
 SHORT = True
 
+DISPLAY = True
 
-def main():
-    print("\nThis program is an implementation for the Conway Weschler System of Scales.\nThis system uses Latin numeric prefixes to extend the \"-illion\" numbers (\"million\", \"billion\", \"trillion\" and so on).\nThis program is based on \"Conway's illion Converter\" by kyoda.")
+def main(n = "", s = True, display = True):
+    global DISPLAY
+    global SHORT
+    DISPLAY = display
+    #command line
+    if len(sys.argv) > 1:
+        if len(sys.argv) == 2:
+            parseInput(sys.argv[1])
+        else: #if you give literally anything as a second inline argument, change scale to long
+            SHORT = False
+            parseInput(sys.argv[1])
+        return
+    #calling main from somewhere else
+    if not n == "":
+        SHORT = s
+        return parseInput(n)
+
+
+
+    dprint("\nThis program is an implementation for the Conway Weschler System of Scales.\nThis system uses Latin numeric prefixes to extend the \"-illion\" numbers (\"million\", \"billion\", \"trillion\" and so on).\nThis program is based on \"Conway's illion Converter\" by kyoda.")
     PickNumberLoop()
+
+def dprint(s = ""):
+    global DISPLAY
+    if DISPLAY:
+        print(s)
 
 def parseInput(i):
     global SHORT
-    i = input(i)
 
-    print()
+    dprint()
     i = i.replace(" ", "")
     if i == ":":
         SHORT = not SHORT
         if SHORT:
-            print("Short scale in use.")
+            dprint("Short scale in use.")
         else:
-            print("Long scale in use.")
+            dprint("Long scale in use.")
         return
 
     args = i.split(":")
@@ -55,7 +80,8 @@ def PickNumberLoop():
             s = "Short"
         if not SHORT:
             s = "Long"
-        i = parseInput("\nGive a power of ten (10^n), and get its name in the Conway-Weschler " + s +  " Scale.\nUse colons to list (start:stop:skip).\nType a single colon to switch between the short and long scales.\n> ")
+        i = input("\nGive a power of ten (10^n), and get its name in the Conway-Weschler " + s +  " Scale.\nUse colons to list (start:stop:skip).\nType a single colon to switch between the short and long scales.\n> ")
+        parseInput(i)
 
 def list(start = 1, end = 1, skip = 1):
 
@@ -69,9 +95,9 @@ def list(start = 1, end = 1, skip = 1):
 
     i = start
     while i <= end:
-        #print(i)
+        #dprint(i)
         printTenPower(str(i))
-        print()
+        dprint()
         i += skip
 
 def printTenPower(e, short = None):
@@ -83,34 +109,33 @@ def printTenPower(e, short = None):
     try:
         e = int(e)
     except ValueError:
-        print("Value Error")
+        dprint("Value Error")
         return ""
     #long scale by default
     scaleFactor = 6
-    tenners = ["One", "Ten", "One Hundred, One Thousand, Ten Thousand, One Hundred Thousand"]
+    tenners = ["One", "Ten", "One Hundred", "One Thousand", "Ten Thousand", "One Hundred Thousand"]
 
     #behold the short scale
     if SHORT:
-
         tenners = ["One", "Ten", "One Hundred"]
         scaleFactor = 3
         if e == 0:
-            print("10^0 = \"One\"")
+            dprint("10^0 = \"One\"")
             return "One"
         if e == 1:
-            print("10^1 = \"Ten\"")
+            dprint("10^1 = \"Ten\"")
             return "Ten"
         if e == 2:
-            print("10^2 = \"One Hundred\"")
+            dprint("10^2 = \"One Hundred\"")
             return "One Hundred"
         if e == 3:
-            print("10^3 = \"One Thousand\"")
+            dprint("10^3 = \"One Thousand\"")
             return "One Thousand"
         if e == 4:
-            print("10^4 = \"Ten Thousand\"")
+            dprint("10^4 = \"Ten Thousand\"")
             return "Ten Thousand"
         if e == 5:
-            print("10^5 = \"One Hundred Thousand\"")
+            dprint("10^5 = \"One Hundred Thousand\"")
             return "One Hundred Thousand"
         else:
             e = e - 3
@@ -118,7 +143,7 @@ def printTenPower(e, short = None):
     out = tenners[e % scaleFactor]
 
     if e < 0:
-        print("Please use non-negative integers.")
+        dprint("Please use non-negative integers.")
         return
 
     i = e // scaleFactor
@@ -128,7 +153,7 @@ def printTenPower(e, short = None):
         out = (out + " " + m).title()
     if SHORT:
         e = e + 3
-    print("10^" + str(e) + " = \"" + str(out) + "\"")
+    dprint("10^" + str(e) + " = \"" + str(out) + "\"")
     return out
 
 def llion(n, modified = False):

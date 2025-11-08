@@ -3,6 +3,7 @@
 #This program is a fork of Conway's Illion Converter by kyoda
 #The Great Myriad Scale is created by Andrew
 
+import sys
 
 UNIT = ['', 'prot', 'deuter', 'trit', 'tesser',
            'pent', 'hect', 'hebdom', 'oct', 'enat']
@@ -12,15 +13,29 @@ BIGS = ['hecaton', 'great']
 
 SUFFIX = "iad"
 
+DISPLAY = True
+
 MAX = 1000
 
-def main():
-    print("\nThis program is a proof of concept for the Great Myriad Scale.\nThis scale names large numbers with myriads, rather than millions.\nYou can find more details on that in the readme.\nThis program is based on \"Conway's illion Converter\" by kyoda.")
+def main(arg = "", display = True):
+    global DISPLAY
+    DISPLAY = display #don't print anything if display is false
+    #command line arg
+    if len(sys.argv) > 1:
+        return parseInput(sys.argv[1])
+    #main is called from somehwere else
+    if not arg == "":
+        return parseInput(arg)
+
+    dprint("\nThis program is a proof of concept for the Great Myriad Scale.\nThis scale names large numbers with myriads, rather than millions.\nYou can find more details on that in the readme.\nThis program is based on \"Conway's illion Converter\" by kyoda.")
     PickNumberLoop()
 
+def dprint(s = ""):
+    global DISPLAY
+    if DISPLAY:
+        print(s)
+
 def parseInput(i):
-    i = input(i)
-    print()
     i = i.replace(" ", "")
 
     args = i.split(":")
@@ -37,7 +52,10 @@ def parseInput(i):
 def PickNumberLoop():
     i = "Lorem Ipsum"
     while (not i == ""):
-        i = parseInput("\nGive a power of ten (10^n), and get its name in the Great Myriad Scale.\nUse colons to list (start:stop:skip).\n> ")
+        i = input("\nGive a power of ten (10^n), and get its name in the Great Myriad Scale.\nUse colons to list (start:stop:skip).\n> ")
+        parseInput(i)
+        dprint()
+
 
 def list(start = 1, end = 1, skip = 1):
 
@@ -51,9 +69,9 @@ def list(start = 1, end = 1, skip = 1):
 
     i = start
     while i <= end:
-        #print(i)
+        #dprint(i)
         printTenPower(str(i))
-        print()
+        dprint()
         i += skip
 
 def printTenPower(e):
@@ -62,11 +80,11 @@ def printTenPower(e):
         tenners = ["One", "Ten", "One Hundred", "Ten Hundred"]
         out = tenners[int(e) % 4]
     except ValueError:
-        print("Value Error")
+        dprint("Value Error")
         return ""
 
     if int(e) < 0:
-        print("Please use non-negative integers.")
+        dprint("Please use non-negative integers.")
         return
 
     i = int(e) // 4
@@ -77,7 +95,7 @@ def printTenPower(e):
     if (not m == ""):
         out = (out + " " + m).title()
 
-    print("10^" + str(e) + " = \"" + str(out) + "\"")
+    dprint("10^" + str(e) + " = \"" + str(out) + "\"")
     return out
 
 def greatsTruncator(m):
@@ -118,7 +136,7 @@ def myriad(n, suffix = "iad"):
             n = n * -1
             suffix = suffix + "th"
     except ValueError:
-        #print(' an error :(')
+        #dprint(' an error :(')
         return ""
     if n > 10 ** MAX:
         return ""
@@ -165,7 +183,7 @@ def base(n):
             return myriad(m) + " " + BIGS[1] + " myr"
         if g > 1 and m == 0:
             #if you actually try to track the stack calls by printing base(g) before return there's a lot more than I expected. It still outputs the correct number of "greats"
-            #print(str(n) + "," + str(g) + " -> " + base(g))
+            #dprint(str(n) + "," + str(g) + " -> " + base(g))
             return BIGS[1] + " " + base(g)
         if g > 1 and m > 0:
             return myriad(m % 10000) + " " + BIGS[1] + " " + base(g)
