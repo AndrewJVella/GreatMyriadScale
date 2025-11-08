@@ -46,19 +46,19 @@ In this scale each power of the myriad get an ancient Greek prefix and an "-iad"
 
 <!-- table 1 -->
 
-| n  | Name          | n  | Name            | n      | Name             |    
-|----|---------------|----|-----------------|--------|------------------|
-| 1  | Myriad        | 12 | Decatodeuteriad | 30     | Tricontiad       |
-| 2  | Deuteriad     | 13 | Decatotritiad   | 40     | Tetracontiad     |
-| 3  | Tritiad       | 14 | Decatotesseriad | 50     | Pentacontiad     |
-| 4  | Tesseriad     | 15 | Decatopentiad   | 60     | Hexacontiad      |
-| 5  | Pentiad       | 16 | Decatohectiad   | 70     | Heptacontiad     |
-| 6  | Hectiad       | 17 | Decatohebdomiad | 80     | Octacontiad      |
-| 7  | Hebdomiad     | 18 | Decatoctiad     | 90     | Enneacontiad     |
-| 8  | Octiad        | 19 | Decatenatiad    | 100    | Hecatoniad       |
-| 9  | Enatiad       | 20 | Icostiad        | 500    | Pentehecatoniad  |
-| 10 | Decatiad      | 21 | Icostoprotiad   | 1000   | Decatohecatoniad |
-| 11 | Decatoprotiad | 22 | Icostodeuteriad | 1,0000 | Great Myriad     |
+|   e | Name              |   e | Name                |     e | Name                 |
+|----:|:------------------|----:|:--------------------|------:|:---------------------|
+|   4 | One Myriad        |  48 | One Decatodeuteriad |   120 | One Tricontiad       |
+|   8 | One Deuteriad     |  52 | One Decatotritiad   |   160 | One Tetracontiad     |
+|  12 | One Tritiad       |  56 | One Decatotesseriad |   200 | One Pentacontiad     |
+|  16 | One Tesseriad     |  60 | One Decatopentiad   |   240 | One Hexacontiad      |
+|  20 | One Pentiad       |  64 | One Decatohectiad   |   280 | One Heptacontiad     |
+|  24 | One Hectiad       |  68 | One Decatohebdomiad |   320 | One Octacontiad      |
+|  28 | One Hebdomiad     |  72 | One Decatoctiad     |   360 | One Enneacontiad     |
+|  32 | One Octiad        |  76 | One Decatenatiad    |   400 | One Hecatoniad       |
+|  36 | One Enatiad       |  80 | One Icostiad        |  2000 | One Pentehecatoniad  |
+|  40 | One Decatiad      |  84 | One Icostoprotiad   |  4000 | One Decatehecatoniad |
+|  44 | One Decatoprotiad |  88 | One Icostodeuteriad | 40000 | One Great Myriad     |
 
 <!-- end table 1 -->
 
@@ -137,52 +137,72 @@ Great Myriad Scale vs Conway-Weschler Short Scale
 
 <!-- table 3 -->
 
+Table of Scales
 
-| e       | Great Myriad                          | Conway-Weschler Short                               |      
-|:-------:|:-------------------------------------:|:---------------------------------------------------:|
-| 0       | One                                   | One                                                 |
-| 1       | Ten                                   | Ten                                                 |
-| 2       | One Hundred                           | One Hundred                                         |
-| 3       | Ten Hundred                           | One Thousand                                        |
-| 4       | One Myriad                            | Ten Thousand                                        |
-| 5       | Ten Myriad                            | One Hundred Thousand                                |
-| 6       | One Hundred Myriad                    | One Million                                         |
-| 7       | Ten Hundred Myriad                    | Ten Million                                         |
-| 8       | One Deuteriad                         | One Hundred Million                                 |
-| 12      | One Tritiad                           | One Trillion                                        |
-| 16      | One Tesseriad                         | Ten Quadrillion                                     |
-| 20      | One Pentiad                           | One Hundred Quintillion                             |   
-| 24      | One Hectiad                           | One Septillion                                      |
-| 28      | One Hebdomiad                         | Ten Octillion                                       |
-| 32      | One Octiad                            | One Hundred Nonillion                               |
-| 36      | One Enatiad                           | One Undecillion                                     |
-| 40      | One Decatiad                          | Ten Duodecillion                                    |
-| 44      | One Decatoprotiad                     | One Hundred Tredecillion                            |
-| 48      | One Decatodeuteriad                   | One Quindecillion                                   |
-| 52      | One Decatotritiad                     | Ten Sexdecillion                                    |
-| 56      | One Decatotesseriad                   | One Hundred Septendecillion                         |
-| 60      | One Decatopentiad                     | One Novendecillion                                  |
-| 64      | One Decatohectiad                     | Ten Vigintillion                                    |
-| 68      | One Decatohebdomiad                   | One Hundred Unvigintillion                          |
-| 72      | One Decatoctiad                       | One Tresvigintillion                                |
-| 76      | One Decatoenatiad                     | Ten Quattuorvigintillion                            |
-| 80      | One Icosiad                           | One Hundred Quinvigintillion                        |
-| 84      | One Icostoprotiad                     | One Septenvigintillion                              |
-| 88      | One Icostodeuteriad                   | Ten Octovigintillion                                |
-| 92      | One Icostotritiad                     | One Hundred Novenvigintillion                       |
-| 96      | One Icostotesseriad                   | One Untrigintillion                                 |
-| 100     | One Icostopentiad                     | Ten Duotrigintillion                                |
-| 200     | One Pentacontiad                      | One Hundred Quinsexagintillion                      |
-| 400     | One Hecatoniad                        | Ten Duotrigintacentillion                           |
-| 800     | One Deuterohecatoniad                 | One Hundred Quinsexagintaducentillion               |
-| 1000    | One Deuterohecatonpentacontiad        | Ten Duotrigintatrecentillion                        |
-| 2000    | One Pentahecatoniad                   | One Hundred Quinsexagintasescentillion              |
-| 4000    | One Decatohecatoniad                  | Ten Milliduotrigintatrecentillion                   |
-| 8000    | One Icostehecatoniad                  | One Hundred Billiquinsexagintasescentillion         |
-| 10000   | One Icostopentehecatoniad             | Ten Trilliduotrigintatrecentillion                  |
-| 20000   | One Pentacontahecatoniad              | One Hundred Sextilliquinsexagintasescentillion      |
-| 40000   | One Great Myriad                      | Ten Tredecilliduotrigintatrecentillion              |
-| 80000   | One Great Deuteriad                   | One Hundred Sesvigintilliquinsexagintasescentillion |
+|     e | Great Myriad Scale          | Conway-Weschler Short                                | Conway-Weschler Long                             |
+|------:|:----------------------------|:-----------------------------------------------------|:-------------------------------------------------|
+|     0 | One                         | One                                                  | One                                              |
+|     1 | Ten                         | Ten                                                  | Ten                                              |
+|     2 | One Hundred                 | One Hundred                                          | One Hundred                                      |
+|     3 | Ten Hundred                 | One Thousand                                         | One Thousand                                     |
+|     4 | One Myriad                  | Ten Thousand                                         | Ten Thousand                                     |
+|     5 | Ten Myriad                  | One Hundred Thousand                                 | One Hundred Thousand                             |
+|     6 | One Hundred Myriad          | One Million                                          | One Million                                      |
+|     7 | Ten Hundred Myriad          | Ten Million                                          | Ten Million                                      |
+|     8 | One Deuteriad               | One Hundred Million                                  | One Hundred Million                              |
+|    12 | One Tritiad                 | One Trillion                                         | One Billion                                      |
+|    16 | One Tesseriad               | Ten Quadrillion                                      | Ten Thousand Billion                             |
+|    20 | One Pentiad                 | One Hundred Quintillion                              | One Hundred Trillion                             |
+|    24 | One Hectiad                 | One Septillion                                       | One Quadrillion                                  |
+|    28 | One Hebdomiad               | Ten Octillion                                        | Ten Thousand Quadrillion                         |
+|    32 | One Octiad                  | One Hundred Nonillion                                | One Hundred Quintillion                          |
+|    36 | One Enatiad                 | One Undecillion                                      | One Sextillion                                   |
+|    40 | One Decatiad                | Ten Duodecillion                                     | Ten Thousand Sextillion                          |
+|    44 | One Decatoprotiad           | One Hundred Tredecillion                             | One Hundred Septillion                           |
+|    48 | One Decatodeuteriad         | One Quindecillion                                    | One Octillion                                    |
+|    52 | One Decatotritiad           | Ten Sedecillion                                      | Ten Thousand Octillion                           |
+|    56 | One Decatotesseriad         | One Hundred Septendecillion                          | One Hundred Nonillion                            |
+|    60 | One Decatopentiad           | One Novendecillion                                   | One Decillion                                    |
+|    64 | One Decatohectiad           | Ten Vigintillion                                     | Ten Thousand Decillion                           |
+|    68 | One Decatohebdomiad         | One Hundred Unvigintillion                           | One Hundred Undecillion                          |
+|    72 | One Decatoctiad             | One Tresvigintillion                                 | One Duodecillion                                 |
+|    76 | One Decatenatiad            | Ten Quattuorvigintillion                             | Ten Thousand Duodecillion                        |
+|    80 | One Icostiad                | One Hundred Quinvigintillion                         | One Hundred Tredecillion                         |
+|    84 | One Icostoprotiad           | One Septemvigintillion                               | One Quattuordecillion                            |
+|    88 | One Icostodeuteriad         | Ten Octovigintillion                                 | Ten Thousand Quattuordecillion                   |
+|    92 | One Icostotritiad           | One Hundred Novemvigintillion                        | One Hundred Quindecillion                        |
+|    96 | One Icostotesseriad         | One Untrigintillion                                  | One Sedecillion                                  |
+|   100 | One Icostopentiad           | Ten Duotrigintillion                                 | Ten Thousand Sedecillion                         |
+|   200 | One Pentacontiad            | One Hundred Quinsexagintillion                       | One Hundred Trestrigintillion                    |
+|   400 | One Hecatoniad              | Ten Duotrigintacentillion                            | Ten Thousand Sesexagintillion                    |
+|   404 | One Hecatonprotiad          | One Hundred Trestrigintacentillion                   | One Hundred Septensexagintillion                 |
+|   800 | One Deuterehecatoniad       | One Hundred Quinsexagintaducentillion                | One Hundred Trestrigintacentillion               |
+|  1200 | One Tritehecatoniad         | One Novenonagintatrecentillion                       | One Ducentillion                                 |
+|  1600 | One Tesserehecatoniad       | Ten Duotrigintaquingentillion                        | Ten Thousand Sesexagintaducentillion             |
+|  2000 | One Pentehecatoniad         | One Hundred Quinsexagintasescentillion               | One Hundred Trestrigintatrecentillion            |
+|  2400 | One Hectehecatoniad         | One Novenonagintaseptingentillion                    | One Quadringentillion                            |
+|  2800 | One Hebdomehecatoniad       | Ten Duotrigintanongentillion                         | Ten Thousand Sesexagintaquadringentillion        |
+|  3200 | One Octehecatoniad          | One Hundred Milliquinsexagintillion                  | One Hundred Trestrigintaquingentillion           |
+|  3600 | One Enatehecatoniad         | One Millinovenonagintacentillion                     | One Sescentillion                                |
+|  4000 | One Decatehecatoniad        | Ten Milliduotrigintatrecentillion                    | Ten Thousand Sesexagintasescentillion            |
+|  4400 | One Decatoprotehecatoniad   | One Hundred Milliquinsexagintaquadringentillion      | One Hundred Trestrigintaseptingentillion         |
+|  4800 | One Decatodeuterehecatoniad | One Millinovenonagintaquingentillion                 | One Octingentillion                              |
+|  5200 | One Decatotritehecatoniad   | Ten Milliduotrigintaseptingentillion                 | Ten Thousand Sesexagintaoctingentillion          |
+|  5600 | One Decatotesserehecatoniad | One Hundred Milliquinsexagintaoctingentillion        | One Hundred Trestrigintanongentillion            |
+|  6000 | One Decatopentehecatoniad   | One Millinovenonagintanongentillion                  | One Millinillion                                 |
+|  6400 | One Decatohectehecatoniad   | Ten Billiduotrigintacentillion                       | Ten Thousand Millisesexagintillion               |
+|  6800 | One Decatohebdomehecatoniad | One Hundred Billiquinsexagintaducentillion           | One Hundred Millitrestrigintacentillion          |
+|  7200 | One Decatoctehecatoniad     | One Billinovenonagintatrecentillion                  | One Milliducentillion                            |
+|  7600 | One Decatenatehecatoniad    | Ten Billiduotrigintaquingentillion                   | Ten Thousand Millisesexagintaducentillion        |
+|  8000 | One Icostehecatoniad        | One Hundred Billiquinsexagintasescentillion          | One Hundred Millitrestrigintatrecentillion       |
+|  8400 | One Icostoprotehecatoniad   | One Billinovenonagintaseptingentillion               | One Milliquadringentillion                       |
+|  8800 | One Icostodeuterehecatoniad | Ten Billiduotrigintanongentillion                    | Ten Thousand Millisesexagintaquadringentillion   |
+|  9200 | One Icostotritehecatoniad   | One Hundred Trilliquinsexagintillion                 | One Hundred Millitrestrigintaquingentillion      |
+|  9600 | One Icostotesserehecatoniad | One Trillinovenonagintacentillion                    | One Millisescentillion                           |
+| 10000 | One Icostopentehecatoniad   | Ten Trilliduotrigintatrecentillion                   | Ten Thousand Millisesexagintasescentillion       |
+| 20000 | One Pentacontehecatoniad    | One Hundred Sextilliquinsexagintasescentillion       | One Hundred Trillitrestrigintatrecentillion      |
+| 40000 | One Great Myriad            | Ten Tredecilliduotrigintatrecentillion               | Ten Thousand Sextillisesexagintasescentillion    |
+| 40400 | One Hecatoniad Great Myriad | One Hundred Tredecilliquinsexagintaquadringentillion | One Hundred Sextillitrestrigintaseptingentillion |
 
 <!-- end table 3 -->
 

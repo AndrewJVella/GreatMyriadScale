@@ -20,6 +20,8 @@
 </head>
 <body>
 
+<!-- These html comments are used as markers for a table updater. text between the markers gets overwritten with a table generated with the latest version of the scale -->
+
 <h1>The Great Myriad Scale</h1>
 <p>The Great Myriad Scale is intended to be a practical convention for describing impractically large numbers. To introduce this passion project, it is simpler to start with what it is not. This is not a notation, like scientific or engineering notation. Nor is this a sales pitch to replace the scale you already count in. This is also not just an arbitrary list of made up big numbers. This scale is designed to be tested, and implemented, so that if you encounter some absurdly large number with a name long and strange, you can think in myriads, and scale it to size. A passion project about ancient Greek counting may seem odd, but if you would like to try an implementation of this scale, there is a python3 program on the Github repository for this page, linked in sources.</p>
 <h2>Design of the Scale</h2>
@@ -148,111 +150,117 @@
 <p>Now it's time to get to that square of a myriad, and the larger powers.</p>
 <h2>The Myriad Powers</h2>
 <p>In this scale each power of the myriad get an ancient Greek prefix and an "-iad" suffix. For example "deuteriad" is a myriad to the second power. it is named by shortening "deuteros myriad", with "deuteros" referring to "second". Each successive power follows this scheme:   </p>
+<!-- table 1 -->
+
 <table>
 <thead>
 <tr>
-<th>n</th>
-<th>Name</th>
-<th>n</th>
-<th>Name</th>
-<th>n</th>
-<th>Name</th>
+<th style="text-align: right;">e</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: right;">e</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: right;">e</th>
+<th style="text-align: left;">Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>Myriad</td>
-<td>12</td>
-<td>Decatodeuteriad</td>
-<td>30</td>
-<td>Tricontiad</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">One Myriad</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: left;">One Decatodeuteriad</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">One Tricontiad</td>
 </tr>
 <tr>
-<td>2</td>
-<td>Deuteriad</td>
-<td>13</td>
-<td>Decatotritiad</td>
-<td>40</td>
-<td>Tetracontiad</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">One Deuteriad</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: left;">One Decatotritiad</td>
+<td style="text-align: right;">160</td>
+<td style="text-align: left;">One Tetracontiad</td>
 </tr>
 <tr>
-<td>3</td>
-<td>Tritiad</td>
-<td>14</td>
-<td>Decatotesseriad</td>
-<td>50</td>
-<td>Pentacontiad</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">One Tritiad</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: left;">One Decatotesseriad</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">One Pentacontiad</td>
 </tr>
 <tr>
-<td>4</td>
-<td>Tesseriad</td>
-<td>15</td>
-<td>Decatopentiad</td>
-<td>60</td>
-<td>Hexacontiad</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">One Tesseriad</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">One Decatopentiad</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">One Hexacontiad</td>
 </tr>
 <tr>
-<td>5</td>
-<td>Pentiad</td>
-<td>16</td>
-<td>Decatohectiad</td>
-<td>70</td>
-<td>Heptacontiad</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">One Pentiad</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: left;">One Decatohectiad</td>
+<td style="text-align: right;">280</td>
+<td style="text-align: left;">One Heptacontiad</td>
 </tr>
 <tr>
-<td>6</td>
-<td>Hectiad</td>
-<td>17</td>
-<td>Decatohebdomiad</td>
-<td>80</td>
-<td>Octacontiad</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">One Hectiad</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: left;">One Decatohebdomiad</td>
+<td style="text-align: right;">320</td>
+<td style="text-align: left;">One Octacontiad</td>
 </tr>
 <tr>
-<td>7</td>
-<td>Hebdomiad</td>
-<td>18</td>
-<td>Decatoctiad</td>
-<td>90</td>
-<td>Enneacontiad</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">One Hebdomiad</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: left;">One Decatoctiad</td>
+<td style="text-align: right;">360</td>
+<td style="text-align: left;">One Enneacontiad</td>
 </tr>
 <tr>
-<td>8</td>
-<td>Octiad</td>
-<td>19</td>
-<td>Decatenatiad</td>
-<td>100</td>
-<td>Hecatoniad</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">One Octiad</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: left;">One Decatenatiad</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: left;">One Hecatoniad</td>
 </tr>
 <tr>
-<td>9</td>
-<td>Enatiad</td>
-<td>20</td>
-<td>Icostiad</td>
-<td>500</td>
-<td>Pentehecatoniad</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">One Enatiad</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">One Icostiad</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: left;">One Pentehecatoniad</td>
 </tr>
 <tr>
-<td>10</td>
-<td>Decatiad</td>
-<td>21</td>
-<td>Icostoprotiad</td>
-<td>1000</td>
-<td>Decatohecatoniad</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">One Decatiad</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: left;">One Icostoprotiad</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">One Decatehecatoniad</td>
 </tr>
 <tr>
-<td>11</td>
-<td>Decatoprotiad</td>
-<td>22</td>
-<td>Icostodeuteriad</td>
-<td>1,0000</td>
-<td>Great Myriad</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">One Decatoprotiad</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: left;">One Icostodeuteriad</td>
+<td style="text-align: right;">40000</td>
+<td style="text-align: left;">One Great Myriad</td>
 </tr>
 </tbody>
 </table>
+<!-- end table 1 -->
+
 <p>Each power of the myriad is named in this pattern until the Great Myriad, which gives this scale its name. The Great Myriad is equal to the myriad raised to the power of a myriad, which is ten to the power of forty thousand. The powers of the Great Myriad are also named with "Great", such that the square of the Great Myriad is the "Great Deuteriad", the cube of the Great Myriad is the "Great Tritiad", and so on. Is that it? No, of course there is more to discuss. Infinity is very big.</p>
 <h2>The Great Myriads</h2>
 <p>Of course, by raising the Great Myriad to the power of a myriad, we get a "Great, Great Myriad". Raise this to the power of a myriad again to get  a "Great, Great, Great Myriad" and so on. To keep names short, a adjectival naming scheme is used (swapping the  suffix used in the above table for "-ic"). The "Great, Great Myriad" is called the "Deuteric Great Myriad". The "Great, Great, Great Myriad" is called the "Tritic Great Myriad", and so on according to the following table, with each item Each item in row n equal to 1,0000^(1,0000^n)</p>
+<!-- table 2 -->
+
 <table>
 <thead>
 <tr>
@@ -355,6 +363,8 @@
 </tr>
 </tbody>
 </table>
+<!-- end table 2 -->
+
 <p>This table grows so fast, that it becomes difficult to describe numbers this large, even in powers of a myriad. For example, a myriad to the power of a tritiad (1,0000^1,0000,0000,0000) is a tritic great myriad, but a myriad to the power of a tritiad-eleven-hundred-eleven-deuteriad-eleven-hundred-eleven-myriad-eleven-hundred-eleven (1,0000^1,1111,1111,1111) is a "decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great decatoprotohecatondecatoprotiad great myriad". This all gets very repetitive, so its best to truncate insignificant figures.</p>
 <p>"But wait!" you shout, "If a myriad to a myriad is a great myriad, and a myriad to a great myriad is a myriadic great myriad, then, surely, a myriadic great myriad is followed by a great myriadic great myriad in an extension of the above table!" You catch your breath. "A myriad to a myriadic great myriad needs a name, and then a myriad to that needs a name and so on!" Ok, a myriad to a myriadic great myriad is a "myriadeuterogonic great myriad", and a myriad to a myriadeuterogonic great myriad is a "myriatritogonic great myriad", and so on. The "-gon" suffix is applied in the same manner that the "-ic" and "-iad" suffixes are applied in respective tables.</p>
 <h2>Constructing Cardinals, Ordinals, and Fractions</h2>
@@ -368,7 +378,7 @@
 <p>You ask yourself "Where do all the number names come from anyway, and when do we run out?" and lo, the rabbit hole! It opens before you to a wonderland of Latin and "googology", and before you realize it you have let the number goblins in. They shout "We want an incremental game! One where players can read all the numbers!" They jump on the bed. "Notations! Bah! Fie on notations!" The number goblins demand a sense of scale. "Notations transform orders of magnitude into mere increments! Madness! People need names! Names!" They grab hold of the bed knobs and shake. The leader shouts in your ear "Don't you understand?! Do it for Archimedes!" The chanting begins. "Conway! Weschler! Knuth!". You are surrounded in a cacophonous, cantankerous, chorus of contention! Then, in unison, a deep breath, and the call of a great horn. "Millinillinillinillinyllion!" With this incantation you are changed, goblinified! There is only one way to lift the spell! Give them their tables, and their powers of ten, so that they might count in numerological novelty until the end of all things!</p>
 <h2>Footnotes and (Additional) Trivia</h2>
 <ul>
-<li>In the Great Myriad Scale "hecto" refers to 6, as in the ordinal "hektos", but "hecto" can also refer to one hundred, as in "hectogon". To prevent confusion, "Hecaton" is used in place of "hecto", where it would refer to one hundred. Thus "hectiad" is a myriad to the sixth and "hecatoniad" is a myriad to the one hundredth. "Hendecatos" and "Dodecatos" (for 11 and 12) produce similar edge cases, and so, are unused.  Greco-English linguistics is difficult. Nomenclature for this scale is (inexpertly) chosen for readability to a contemporary English speaker. </li>
+<li>In the Great Myriad Scale "hecto" refers to 6, as in the ordinal "hektos", but "hecto" can also refer to one hundred, as in "hectogon". To prevent confusion, "Hecaton" is used in place of "hecto", where it would refer to one hundred. Thus "hectiad" is a myriad to the sixth and "hecatoniad" is a myriad to the one hundredth. "Hendecatos" and "Dodecatos" (for 11 and 12) produce similar edge cases, and so, are unused.  Greco-English linguistics is difficult. Nomenclature for this scale is (inexpertly) chosen for readability to a contemporary English speaker.</li>
 <li>An apeirogon has an infinite number of sides; "apeiro" gives the Great Myriad Scale the "Apeiriad" and the "Apeiron Myriad"</li>
 <li>Archimedes' largest Sand Number (the largest described in The Sand Reckoner) is equal to 10^(8 * 10^16), or a "Tesseron Deuteriad".</li>
 <li>"Cola's Enumeration" and the "Ordinal Myriad Scale" are previous attempts to enumerate large numbers, using the Conway Wechsler system, Greek ordinals, and hyperoperations. Ultimately, it is important that each name for a large number is based on the names of smaller numbers, rather than operations or notations. The numbers between "novel numbers", or "milestone numbers", also need to be nameable.</li>
@@ -387,233 +397,398 @@
 </ul>
 <h2>Tables</h2>
 <p>Great Myriad Scale vs Conway-Weschler Short Scale</p>
+<!-- table 3 -->
+
+<p>Table of Scales</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">e</th>
-<th style="text-align: center;">Great Myriad</th>
-<th style="text-align: center;">Conway-Weschler Short</th>
+<th style="text-align: right;">e</th>
+<th style="text-align: left;">Great Myriad Scale</th>
+<th style="text-align: left;">Conway-Weschler Short</th>
+<th style="text-align: left;">Conway-Weschler Long</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">One</td>
-<td style="text-align: center;">One</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">One</td>
+<td style="text-align: left;">One</td>
+<td style="text-align: left;">One</td>
 </tr>
 <tr>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Ten</td>
-<td style="text-align: center;">Ten</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Ten</td>
+<td style="text-align: left;">Ten</td>
+<td style="text-align: left;">Ten</td>
 </tr>
 <tr>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">One Hundred</td>
-<td style="text-align: center;">One Hundred</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">One Hundred</td>
+<td style="text-align: left;">One Hundred</td>
+<td style="text-align: left;">One Hundred</td>
 </tr>
 <tr>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">Ten Hundred</td>
-<td style="text-align: center;">One Thousand</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Ten Hundred</td>
+<td style="text-align: left;">One Thousand</td>
+<td style="text-align: left;">One Thousand</td>
 </tr>
 <tr>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">One Myriad</td>
-<td style="text-align: center;">Ten Thousand</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">One Myriad</td>
+<td style="text-align: left;">Ten Thousand</td>
+<td style="text-align: left;">Ten Thousand</td>
 </tr>
 <tr>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">Ten Myriad</td>
-<td style="text-align: center;">One Hundred Thousand</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Ten Myriad</td>
+<td style="text-align: left;">One Hundred Thousand</td>
+<td style="text-align: left;">One Hundred Thousand</td>
 </tr>
 <tr>
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">One Hundred Myriad</td>
-<td style="text-align: center;">One Million</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">One Hundred Myriad</td>
+<td style="text-align: left;">One Million</td>
+<td style="text-align: left;">One Million</td>
 </tr>
 <tr>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">Ten Hundred Myriad</td>
-<td style="text-align: center;">Ten Million</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Ten Hundred Myriad</td>
+<td style="text-align: left;">Ten Million</td>
+<td style="text-align: left;">Ten Million</td>
 </tr>
 <tr>
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">One Deuteriad</td>
-<td style="text-align: center;">One Hundred Million</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">One Deuteriad</td>
+<td style="text-align: left;">One Hundred Million</td>
+<td style="text-align: left;">One Hundred Million</td>
 </tr>
 <tr>
-<td style="text-align: center;">12</td>
-<td style="text-align: center;">One Tritiad</td>
-<td style="text-align: center;">One Trillion</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">One Tritiad</td>
+<td style="text-align: left;">One Trillion</td>
+<td style="text-align: left;">One Billion</td>
 </tr>
 <tr>
-<td style="text-align: center;">16</td>
-<td style="text-align: center;">One Tesseriad</td>
-<td style="text-align: center;">Ten Quadrillion</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">One Tesseriad</td>
+<td style="text-align: left;">Ten Quadrillion</td>
+<td style="text-align: left;">Ten Thousand Billion</td>
 </tr>
 <tr>
-<td style="text-align: center;">20</td>
-<td style="text-align: center;">One Pentiad</td>
-<td style="text-align: center;">One Hundred Quintillion</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">One Pentiad</td>
+<td style="text-align: left;">One Hundred Quintillion</td>
+<td style="text-align: left;">One Hundred Trillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">24</td>
-<td style="text-align: center;">One Hectiad</td>
-<td style="text-align: center;">One Septillion</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">One Hectiad</td>
+<td style="text-align: left;">One Septillion</td>
+<td style="text-align: left;">One Quadrillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">28</td>
-<td style="text-align: center;">One Hebdomiad</td>
-<td style="text-align: center;">Ten Octillion</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">One Hebdomiad</td>
+<td style="text-align: left;">Ten Octillion</td>
+<td style="text-align: left;">Ten Thousand Quadrillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">32</td>
-<td style="text-align: center;">One Octiad</td>
-<td style="text-align: center;">One Hundred Nonillion</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">One Octiad</td>
+<td style="text-align: left;">One Hundred Nonillion</td>
+<td style="text-align: left;">One Hundred Quintillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">36</td>
-<td style="text-align: center;">One Enatiad</td>
-<td style="text-align: center;">One Undecillion</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">One Enatiad</td>
+<td style="text-align: left;">One Undecillion</td>
+<td style="text-align: left;">One Sextillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">40</td>
-<td style="text-align: center;">One Decatiad</td>
-<td style="text-align: center;">Ten Duodecillion</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">One Decatiad</td>
+<td style="text-align: left;">Ten Duodecillion</td>
+<td style="text-align: left;">Ten Thousand Sextillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">44</td>
-<td style="text-align: center;">One Decatoprotiad</td>
-<td style="text-align: center;">One Hundred Tredecillion</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">One Decatoprotiad</td>
+<td style="text-align: left;">One Hundred Tredecillion</td>
+<td style="text-align: left;">One Hundred Septillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">48</td>
-<td style="text-align: center;">One Decatodeuteriad</td>
-<td style="text-align: center;">One Quindecillion</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: left;">One Decatodeuteriad</td>
+<td style="text-align: left;">One Quindecillion</td>
+<td style="text-align: left;">One Octillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">52</td>
-<td style="text-align: center;">One Decatotritiad</td>
-<td style="text-align: center;">Ten Sexdecillion</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: left;">One Decatotritiad</td>
+<td style="text-align: left;">Ten Sedecillion</td>
+<td style="text-align: left;">Ten Thousand Octillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">56</td>
-<td style="text-align: center;">One Decatotesseriad</td>
-<td style="text-align: center;">One Hundred Septendecillion</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: left;">One Decatotesseriad</td>
+<td style="text-align: left;">One Hundred Septendecillion</td>
+<td style="text-align: left;">One Hundred Nonillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">60</td>
-<td style="text-align: center;">One Decatopentiad</td>
-<td style="text-align: center;">One Novendecillion</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">One Decatopentiad</td>
+<td style="text-align: left;">One Novendecillion</td>
+<td style="text-align: left;">One Decillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">64</td>
-<td style="text-align: center;">One Decatohectiad</td>
-<td style="text-align: center;">Ten Vigintillion</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: left;">One Decatohectiad</td>
+<td style="text-align: left;">Ten Vigintillion</td>
+<td style="text-align: left;">Ten Thousand Decillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">68</td>
-<td style="text-align: center;">One Decatohebdomiad</td>
-<td style="text-align: center;">One Hundred Unvigintillion</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: left;">One Decatohebdomiad</td>
+<td style="text-align: left;">One Hundred Unvigintillion</td>
+<td style="text-align: left;">One Hundred Undecillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">72</td>
-<td style="text-align: center;">One Decatoctiad</td>
-<td style="text-align: center;">One Tresvigintillion</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: left;">One Decatoctiad</td>
+<td style="text-align: left;">One Tresvigintillion</td>
+<td style="text-align: left;">One Duodecillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">76</td>
-<td style="text-align: center;">One Decatoenatiad</td>
-<td style="text-align: center;">Ten Quattuorvigintillion</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: left;">One Decatenatiad</td>
+<td style="text-align: left;">Ten Quattuorvigintillion</td>
+<td style="text-align: left;">Ten Thousand Duodecillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">80</td>
-<td style="text-align: center;">One Icosiad</td>
-<td style="text-align: center;">One Hundred Quinvigintillion</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">One Icostiad</td>
+<td style="text-align: left;">One Hundred Quinvigintillion</td>
+<td style="text-align: left;">One Hundred Tredecillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">84</td>
-<td style="text-align: center;">One Icostoprotiad</td>
-<td style="text-align: center;">One Septenvigintillion</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: left;">One Icostoprotiad</td>
+<td style="text-align: left;">One Septemvigintillion</td>
+<td style="text-align: left;">One Quattuordecillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">88</td>
-<td style="text-align: center;">One Icostodeuteriad</td>
-<td style="text-align: center;">Ten Octovigintillion</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: left;">One Icostodeuteriad</td>
+<td style="text-align: left;">Ten Octovigintillion</td>
+<td style="text-align: left;">Ten Thousand Quattuordecillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">92</td>
-<td style="text-align: center;">One Icostotritiad</td>
-<td style="text-align: center;">One Hundred Novenvigintillion</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: left;">One Icostotritiad</td>
+<td style="text-align: left;">One Hundred Novemvigintillion</td>
+<td style="text-align: left;">One Hundred Quindecillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">96</td>
-<td style="text-align: center;">One Icostotesseriad</td>
-<td style="text-align: center;">One Untrigintillion</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: left;">One Icostotesseriad</td>
+<td style="text-align: left;">One Untrigintillion</td>
+<td style="text-align: left;">One Sedecillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">100</td>
-<td style="text-align: center;">One Icostopentiad</td>
-<td style="text-align: center;">Ten Duotrigintillion</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">One Icostopentiad</td>
+<td style="text-align: left;">Ten Duotrigintillion</td>
+<td style="text-align: left;">Ten Thousand Sedecillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">200</td>
-<td style="text-align: center;">One Pentacontiad</td>
-<td style="text-align: center;">One Hundred Quinsexagintillion</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">One Pentacontiad</td>
+<td style="text-align: left;">One Hundred Quinsexagintillion</td>
+<td style="text-align: left;">One Hundred Trestrigintillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">400</td>
-<td style="text-align: center;">One Hecatoniad</td>
-<td style="text-align: center;">Ten Duotrigintacentillion</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: left;">One Hecatoniad</td>
+<td style="text-align: left;">Ten Duotrigintacentillion</td>
+<td style="text-align: left;">Ten Thousand Sesexagintillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">800</td>
-<td style="text-align: center;">One Deuterohecatoniad</td>
-<td style="text-align: center;">One Hundred Quinsexagintaducentillion</td>
+<td style="text-align: right;">404</td>
+<td style="text-align: left;">One Hecatonprotiad</td>
+<td style="text-align: left;">One Hundred Trestrigintacentillion</td>
+<td style="text-align: left;">One Hundred Septensexagintillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">1000</td>
-<td style="text-align: center;">One Deuterohecatonpentacontiad</td>
-<td style="text-align: center;">Ten Duotrigintatrecentillion</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: left;">One Deuterehecatoniad</td>
+<td style="text-align: left;">One Hundred Quinsexagintaducentillion</td>
+<td style="text-align: left;">One Hundred Trestrigintacentillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">2000</td>
-<td style="text-align: center;">One Pentahecatoniad</td>
-<td style="text-align: center;">One Hundred Quinsexagintasescentillion</td>
+<td style="text-align: right;">1200</td>
+<td style="text-align: left;">One Tritehecatoniad</td>
+<td style="text-align: left;">One Novenonagintatrecentillion</td>
+<td style="text-align: left;">One Ducentillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">4000</td>
-<td style="text-align: center;">One Decatohecatoniad</td>
-<td style="text-align: center;">Ten Milliduotrigintatrecentillion</td>
+<td style="text-align: right;">1600</td>
+<td style="text-align: left;">One Tesserehecatoniad</td>
+<td style="text-align: left;">Ten Duotrigintaquingentillion</td>
+<td style="text-align: left;">Ten Thousand Sesexagintaducentillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">8000</td>
-<td style="text-align: center;">One Icostehecatoniad</td>
-<td style="text-align: center;">One Hundred Billiquinsexagintasescentillion</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: left;">One Pentehecatoniad</td>
+<td style="text-align: left;">One Hundred Quinsexagintasescentillion</td>
+<td style="text-align: left;">One Hundred Trestrigintatrecentillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">10000</td>
-<td style="text-align: center;">One Icostopentehecatoniad</td>
-<td style="text-align: center;">Ten Trilliduotrigintatrecentillion</td>
+<td style="text-align: right;">2400</td>
+<td style="text-align: left;">One Hectehecatoniad</td>
+<td style="text-align: left;">One Novenonagintaseptingentillion</td>
+<td style="text-align: left;">One Quadringentillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">20000</td>
-<td style="text-align: center;">One Pentacontahecatoniad</td>
-<td style="text-align: center;">One Hundred Sextilliquinsexagintasescentillion</td>
+<td style="text-align: right;">2800</td>
+<td style="text-align: left;">One Hebdomehecatoniad</td>
+<td style="text-align: left;">Ten Duotrigintanongentillion</td>
+<td style="text-align: left;">Ten Thousand Sesexagintaquadringentillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">40000</td>
-<td style="text-align: center;">One Great Myriad</td>
-<td style="text-align: center;">Ten Tredecilliduotrigintatrecentillion</td>
+<td style="text-align: right;">3200</td>
+<td style="text-align: left;">One Octehecatoniad</td>
+<td style="text-align: left;">One Hundred Milliquinsexagintillion</td>
+<td style="text-align: left;">One Hundred Trestrigintaquingentillion</td>
 </tr>
 <tr>
-<td style="text-align: center;">80000</td>
-<td style="text-align: center;">One Great Deuteriad</td>
-<td style="text-align: center;">One Hundred Sesvigintilliquinsexagintasescentillion</td>
+<td style="text-align: right;">3600</td>
+<td style="text-align: left;">One Enatehecatoniad</td>
+<td style="text-align: left;">One Millinovenonagintacentillion</td>
+<td style="text-align: left;">One Sescentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">One Decatehecatoniad</td>
+<td style="text-align: left;">Ten Milliduotrigintatrecentillion</td>
+<td style="text-align: left;">Ten Thousand Sesexagintasescentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">4400</td>
+<td style="text-align: left;">One Decatoprotehecatoniad</td>
+<td style="text-align: left;">One Hundred Milliquinsexagintaquadringentillion</td>
+<td style="text-align: left;">One Hundred Trestrigintaseptingentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">4800</td>
+<td style="text-align: left;">One Decatodeuterehecatoniad</td>
+<td style="text-align: left;">One Millinovenonagintaquingentillion</td>
+<td style="text-align: left;">One Octingentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">5200</td>
+<td style="text-align: left;">One Decatotritehecatoniad</td>
+<td style="text-align: left;">Ten Milliduotrigintaseptingentillion</td>
+<td style="text-align: left;">Ten Thousand Sesexagintaoctingentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">5600</td>
+<td style="text-align: left;">One Decatotesserehecatoniad</td>
+<td style="text-align: left;">One Hundred Milliquinsexagintaoctingentillion</td>
+<td style="text-align: left;">One Hundred Trestrigintanongentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">6000</td>
+<td style="text-align: left;">One Decatopentehecatoniad</td>
+<td style="text-align: left;">One Millinovenonagintanongentillion</td>
+<td style="text-align: left;">One Millinillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">6400</td>
+<td style="text-align: left;">One Decatohectehecatoniad</td>
+<td style="text-align: left;">Ten Billiduotrigintacentillion</td>
+<td style="text-align: left;">Ten Thousand Millisesexagintillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">6800</td>
+<td style="text-align: left;">One Decatohebdomehecatoniad</td>
+<td style="text-align: left;">One Hundred Billiquinsexagintaducentillion</td>
+<td style="text-align: left;">One Hundred Millitrestrigintacentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">7200</td>
+<td style="text-align: left;">One Decatoctehecatoniad</td>
+<td style="text-align: left;">One Billinovenonagintatrecentillion</td>
+<td style="text-align: left;">One Milliducentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">7600</td>
+<td style="text-align: left;">One Decatenatehecatoniad</td>
+<td style="text-align: left;">Ten Billiduotrigintaquingentillion</td>
+<td style="text-align: left;">Ten Thousand Millisesexagintaducentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">8000</td>
+<td style="text-align: left;">One Icostehecatoniad</td>
+<td style="text-align: left;">One Hundred Billiquinsexagintasescentillion</td>
+<td style="text-align: left;">One Hundred Millitrestrigintatrecentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">8400</td>
+<td style="text-align: left;">One Icostoprotehecatoniad</td>
+<td style="text-align: left;">One Billinovenonagintaseptingentillion</td>
+<td style="text-align: left;">One Milliquadringentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">8800</td>
+<td style="text-align: left;">One Icostodeuterehecatoniad</td>
+<td style="text-align: left;">Ten Billiduotrigintanongentillion</td>
+<td style="text-align: left;">Ten Thousand Millisesexagintaquadringentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">9200</td>
+<td style="text-align: left;">One Icostotritehecatoniad</td>
+<td style="text-align: left;">One Hundred Trilliquinsexagintillion</td>
+<td style="text-align: left;">One Hundred Millitrestrigintaquingentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">9600</td>
+<td style="text-align: left;">One Icostotesserehecatoniad</td>
+<td style="text-align: left;">One Trillinovenonagintacentillion</td>
+<td style="text-align: left;">One Millisescentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">10000</td>
+<td style="text-align: left;">One Icostopentehecatoniad</td>
+<td style="text-align: left;">Ten Trilliduotrigintatrecentillion</td>
+<td style="text-align: left;">Ten Thousand Millisesexagintasescentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">20000</td>
+<td style="text-align: left;">One Pentacontehecatoniad</td>
+<td style="text-align: left;">One Hundred Sextilliquinsexagintasescentillion</td>
+<td style="text-align: left;">One Hundred Trillitrestrigintatrecentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">40000</td>
+<td style="text-align: left;">One Great Myriad</td>
+<td style="text-align: left;">Ten Tredecilliduotrigintatrecentillion</td>
+<td style="text-align: left;">Ten Thousand Sextillisesexagintasescentillion</td>
+</tr>
+<tr>
+<td style="text-align: right;">40400</td>
+<td style="text-align: left;">One Hecatoniad Great Myriad</td>
+<td style="text-align: left;">One Hundred Tredecilliquinsexagintaquadringentillion</td>
+<td style="text-align: left;">One Hundred Sextillitrestrigintaseptingentillion</td>
 </tr>
 </tbody>
 </table>
+<!-- end table 3 -->
+
 <p>Nomenclature Table</p>
+<!-- table 4 -->
+
 <table>
 <thead>
 <tr>
@@ -716,5 +891,6 @@
 </tr>
 </tbody>
 </table>
+<!-- end table 4 -->
 </body>
 </html>
