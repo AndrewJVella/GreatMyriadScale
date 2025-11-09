@@ -1,6 +1,6 @@
 #from scales import myriad
 #from scales import million
-from scales import tables
+import tables
 import sys
 
 def main():
