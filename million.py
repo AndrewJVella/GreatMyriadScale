@@ -39,7 +39,7 @@ def main(n = "", s = True, display = True):
 
 
 
-    dprint("\nThis program is an implementation for the Conway Weschler System of Scales.\nThis system uses Latin numeric prefixes to extend the \"-illion\" numbers (\"million\", \"billion\", \"trillion\" and so on).\nThis program is based on \"Conway's illion Converter\" by kyoda.")
+    dprint("\nThis program is an implementation for the Conway Weschler System of Scales.\nThis system uses Latin numeric prefixes to extend the \"-illion\" numbers\n(\"million\", \"billion\", \"trillion\" and so on).\nThis program is based on \"Conway's illion Converter\" by kyoda.")
     PickNumberLoop()
 
 def dprint(s = ""):

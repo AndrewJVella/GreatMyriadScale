@@ -23,10 +23,9 @@ def main(arg = "", display = True):
     #command line arg
     if len(sys.argv) > 1:
         return parseInput(sys.argv[1])
-    #main is called from somehwere else
-    if not arg == "":
-        return parseInput(arg)
 
+    if not arg == "": #main is called from somehwere else
+        return parseInput(arg)
     dprint("\nThis program is a proof of concept for the Great Myriad Scale.\nThis scale names large numbers with myriads, rather than millions.\nYou can find more details on that in the readme.\nThis program is based on \"Conway's illion Converter\" by kyoda.")
     PickNumberLoop()
 

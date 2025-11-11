@@ -1,7 +1,9 @@
-#from scales import myriad
-#from scales import million
+
+import myriad
+import million
 import tables
 import sys
+import os
 
 def main():
     tables.main()
@@ -14,47 +16,41 @@ def main(arg = "", display = True):
     #main is called from somehwere else
     if not arg == "":
         return parseInput(arg)
-
-    print("\nThis program is a proof of concept for the Great Myriad Scale.\nThis scale names large numbers with myriads, rather than millions.\nYou can find more details on that in the readme.\nThis program is based on \"Conway's illion Converter\" by kyoda.")
     PickNumberLoop()
 
 
 def parseInput(i):
-    i = i.replace(" ", "")
 
-    args = i.split(":")
+    if (i == ""):
+        return ""
 
-    if len(args) < 2:
-        return doThings([i])
-    if len(args) == 2:
-        return list(args[0], args[1])
-    if len(args) > 3:
-        return list(args[0], args[1], args[2])
+    i = i.replace(" ", "")[0] #get a number
+
+    if (i == "1"):
+        myriad.main()
+        return
+    if (i == "2"):
+        million.main()
+        return
+    if (i == "3"):
+        tables.main()
+        return
+    else:
+        print("Silly bean, pick a number!\n")
+    return
+
+
 
 
 def PickNumberLoop():
     i = "Lorem Ipsum"
+    tables.main()
     while (not i == ""):
-        i = input("\nGive a power of ten (10^n), and get its name in the Great Myriad Scale.\nUse colons to list (start:stop:skip).\n> ")
+        i = input("Select an option:\n1. Generate Myriads\n2. Generate Millions\n3. Tables (Quick Help)\n> ")
         parseInput(i)
         print()
 
 
-def list(start = 1, end = 1, skip = 1):
-
-    try:
-        end = int(end)
-        skip = int(skip)
-        start = int(start)
-    except ValueError:
-        print ("Value Error")
-        return ""
-
-    doThings(range(start, end, skip))
-
-def doThings(i):
-    print(tables.getCustomTable(i))
-    return
 
 
 main()
